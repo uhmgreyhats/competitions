@@ -1,0 +1,14 @@
+--DEFCON NOTES--
+pfsense
+wireshark
+moniter
+onion os
+volatility (program)
+change credentials
+
+--PREP SITES--
+http://www.hackingtheuniverse.com/infosec/isnews/ccdc-tips
+http://blog.cobaltstrike.com/2013/04/24/national-ccdc-red-team-fair-and-balanced/
+
+--SYS MONITERING--
+
