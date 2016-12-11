@@ -11,4 +11,4 @@ http://www.hackingtheuniverse.com/infosec/isnews/ccdc-tips
 http://blog.cobaltstrike.com/2013/04/24/national-ccdc-red-team-fair-and-balanced/
 
 --SYS MONITERING--
-
+https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html

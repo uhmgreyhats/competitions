@@ -1,0 +1,16 @@
+--TOPICS--
+http://www.nationalcyberleague.org/preparation.shtml
+
+The Spring Training challenges are designed to develop and validate the following competencies/skills:
+	Open Source Intelligence
+	Network Traffic Analysis
+	Log Analysis
+	Scanning & Reconnaissance
+	Wireless Access Exploitation
+	Cryptography
+	Password Cracking
+	Web Application Exploitation
+	Enumeration & Exploitation
+
+
+
