@@ -1,4 +1,5 @@
 
+source: wraysec.com/2015/11/02/how-to-win-the-ncl/
 
 The National Cyber League, also known as the NCL, is a collegiate cyber security program. It’s more than just a competition, but a full season-long training platform. NCL was created to provide an ongoing virtual training ground for collegiate students to develop, practice, and validate their cyber security skills using next-generation, high-fidelity simulation environments. The league provides a means for the participants to prepare and test themselves against today’s security challenges.
 
