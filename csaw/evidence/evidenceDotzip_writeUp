@@ -1,0 +1,45 @@
+(as a note, we didn't get the point but we were really close to the flag.... it was under our noses when we did this)
+
+CHALLENGE:
+As part of CSAW CTF's ongoing efforts to terminate cheaters with extreme
+prejudice, we were supposed to have evidence incriminating a handful of teams
+in this zip file. I do not know what happened, but I do not think the evidence
+actually made it in there...
+
+Process:
+Download the Zip file
+
+so from when we get the zipped file, i tried to unzip it
+
+to my surprise i find that all the files that come out of the zipped file were blank
+so i had to ask around the slack to see what could it be.
+
+so my friend said that we should look at the zipped file in a hexeditor and he
+uses ghex, i am using ghex for my hex editor
+
+me and one of my friend came to the conclusion that we had to be very tedious
+and try to change all the compression methods.
+
+then at that point, i didn't want to be tedious and fix everything
+
+-- end of the CTF --
+
+from when i check other people's write ups i came to find out how to find the
+flag
+
+i was angry, sad, and a little embarrassed.
+
+when i opened it back up in ghex to find it right there. in plain sight
+the words
+
+galf
+3ht{
+liv_
+n4il
+_3w_
+d33n
+rf#_elee
+neff
+}
+
+to see everything in backwards flag{th3_villi4n_w3_n33d_#freeleffen}

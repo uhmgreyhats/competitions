@@ -1,0 +1,46 @@
+Challenge:
+	I thought I found a perfect match but she ended up being my regEx girlfriend.
+
+	Note: You can't use newlines inside your match.
+
+	nc misc.chal.csaw.io 8001
+
+
+nc’ing that gave this:
+
+	Can you match these regexes?
+	Fq[xpFVq21\Wb]{10}[a-zA-Z]7+(chair|wolf)*M{11}[1-9]+8[a-z]+[2H0I8kX0]*
+
+(the regex would be a random regex)
+
+It’s asking for any string that the regex will match. If string is a valid match,you’ll get another regex. Repeat. 
+
+The connection would timeout after about 20 seconds of no input (so you need to use a script).
+
+Using Python:
+	sock.connect to connect to misc.chal.csaw.io
+	sock.recv receive the data (reading the first line into a trash variable)
+
+
+Then I used this  to generate a matching string:
+	https://bitbucket.org/leapfrogdevelopment/rstr
+	
+	(rstr.xeger)
+
+eg.
+
+Fq~(<]q>'*'.X77777777777777777777777wolfchairchairchairchairwolfwolfchairchairwolfchairchairwolfMMMMMMMMMMM21746885529354145472528584338blyvmcnjjcrfabrwlsyeexhlcrfyojwiprsnvtyomoazdurodetwecrwancuqhghdoxpssjnuajidygfrluaujoskbcjcfegn2HXI0kH00kH22k2X8800XH0H8XHX8I8XkIIk0X002kI0XI0k82I02H0k020	
+
+
+Since the regex has \W , sometimes xeger will generate \n 
+As the matches cannot contain \n, use re.sub to change any \n’s into \t
+
+Then sock.send it back. Then sock.send a \n so input will be accepted.
+
+Put the recv -> xeger -> sub -> send in a loop, and output everything to a file. 
+
+After about 2000 repetitions the flag was spat out:
+
+flag{^regularly_express_yourself$}
+
+
