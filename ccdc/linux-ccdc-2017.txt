@@ -1,0 +1,52 @@
+linux team
+1) change credentiaon
+	passwd -u root <password>
+2) remove/disable invalid users
+	only root, bulk disable all accounts
+	passwd -l -a *
+	(list users)
+3) base line systems
+	top/htop > baseline.txt
+	(network stack)
+	(file systems)
+	(user accounts)
+	(services)
+4) check software versions
+	package --version
+	if bad mirror in sources.list, change
+	remove vs update?
+	db of soft vers and vuls
+	vuls scan self?
+5) firewall
+	ufw
+	anti-virus
+	malware scanner
+6) services
+	mail
+	http
+	ftp/timeshare/samba/file sharing
+	docker/containers
+	virtualizer/hyper visor
+	subnetting more?
+	hardware? switches/routers
+misc
+	OS
+		Fedora
+		CentOS
+		Ubuntu
+	password management
+		lastpass
+		10 min mail
+	desktop killing, only terminal
+		xorg
+		wayland
+	pivoting on the network
+		other machine infected, trying attacking within
+		arp poisiing
+	digital ocean
+		copy images
+		redirect traffic there
+	honeypot/black hole
+	how are we intergrating with windows:w
+	wireless
+		no, 98%
