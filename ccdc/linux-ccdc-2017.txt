@@ -50,3 +50,9 @@ misc
 	how are we intergrating with windows:w
 	wireless
 		no, 98%
+	http://www.brendangregg.com/Perf/linux_observability_tools.png
+	http://www.quepublishing.com/articles/article.aspx?p=22306
+	https://blog.serverdensity.com/80-linux-monitoring-tools-know/
+	http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/
+	http://www.linuxlinks.com/article/20090709183715280/SystemMonitoring.html
+	https://opensource.com/life/16/2/open-source-tools-system-monitoring
