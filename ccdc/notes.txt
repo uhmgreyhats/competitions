@@ -1,20 +1,58 @@
---DEFCON NOTES--
-change credentials
-moniter
-onion os
-pfsense
-volatility (program)
-wireshark
-
---PREP SITES--
-blog.cobaltstrike.com/2013/04/24/national-ccdc-red-team-fair-and-balanced/
-cyberpatriotarchives.com/Checklists.php
-hackingtheuniverse.com/infosec/isnews/ccdc-tips
-
---SYS MONITERING--
-https://www.cyberciti.biz/tips/top-linux-monitoring-tools.html
-
---BRAIN DUMP--
-make script/playbook
-	do this, then this, then that
-split teams/groups based on ncl ranks
+game plan
+	change credentials
+	disable users
+		only root active
+		bulk disable all accounts
+	software
+		package --version
+		check sources.list
+		remove vs update?
+		db of soft vers and vuls
+		self vuls scan
+	firewall
+		ufw
+		anti-virus
+		malware scanner
+	services
+		mail
+		http
+		ftp/timeshare/samba/file sharing
+		docker/containers
+		virtualizer/hyper visor
+		subnetting more?
+		hardware? switches/routers
+misc
+	black hole/honeypot
+	desktop killing, only terminal
+		xorg
+		wayland
+	password management
+		lastpass
+		paper and pencil
+	pivoting on the network
+		other machine infected, trying attacking within
+		arp poisining
+reading
+	game theory
+		hackingtheuniverse.com/infosec/isnews/ccdc-tips
+	guides
+		cyberpatriotarchives.com/Checklists.php
+	red team write up
+		alexlevinson.wordpress.com/2013/04/24/ccdc-2013-red-team-feedback/
+		bit.ly/rmudge_derbycon
+		blog.cobaltstrike.com/2013/04/24/national-ccdc-red-team-fair-and-balanced
+		hecfblog.com/2013/04/nccdc-2013-lessons-learned.html
+		securingtomorrow.mcafee.com/executive-perspectives/nccdc-2013-red-team-recap
+tools
+	bmon
+	dstat
+	glances
+	gnome system monitor
+	htop
+	ifstat
+	kde system guard
+	onion os
+	snort
+	tcpdump
+	w (actual command, see whos logged in and what doing)
+	wireshark
