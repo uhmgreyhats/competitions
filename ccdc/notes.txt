@@ -54,5 +54,6 @@ tools
 	onion os
 	snort
 	tcpdump
+	sysdig.org
 	w (actual command, see whos logged in and what doing)
 	wireshark
