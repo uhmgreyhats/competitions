@@ -44,6 +44,7 @@ reading
 		hecfblog.com/2013/04/nccdc-2013-lessons-learned.html
 		securingtomorrow.mcafee.com/executive-perspectives/nccdc-2013-red-team-recap
 tools
+	ansible
 	bmon
 	dstat
 	glances
