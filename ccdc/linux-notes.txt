@@ -1,26 +1,24 @@
 out the gates
-	users
+	users - tyler
 		change credentials
 		passwd -l <all but root and admin>
 		bulk disable all accounts
 			careful of valid accounts used by services e.g. www-data
-	software
+	software - hendricks
 		check sources.list
 			centos
 			deb /etc/apt/sources.list
 			ubuntu
 		apt update
-		apt upgrade
 		lynis
-	firewall
+		(bastille)
+	firewall chris/vincent
 		nmap
-		ufw
+		ufw - chris
 			everything but ssh
 			pre-made rule set
-			chris
-		snort
+		snort - vincent
 			pre-made rules
-			vincent
 		tcpdump
 			pre-made rules
 monitoring
