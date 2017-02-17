@@ -1,37 +1,46 @@
-game plan
-	change credentials
-	disable users
-		only root active
+out the gates
+	users
+		change credentials
+		passwd -l <all but root and admin>
 		bulk disable all accounts
+			careful of valid accounts used by services e.g. www-data
 	software
-		package --version
 		check sources.list
-		remove vs update?
-		db of soft vers and vuls
-		self vuls scan
+			centos
+			deb /etc/apt/sources.list
+			ubuntu
+		apt update
+		apt upgrade
+		lynis
 	firewall
+		nmap
 		ufw
-		anti-virus
-		malware scanner
-	services
-		mail
-		http
-		ftp/timeshare/samba/file sharing
-		docker/containers
-		virtualizer/hyper visor
-		subnetting more?
-		hardware? switches/routers
-misc
-	black hole/honeypot
-	desktop killing, only terminal
-		xorg
-		wayland
-	password management
-		lastpass
-		paper and pencil
-	pivoting on the network
-		other machine infected, trying attacking within
-		arp poisining
+			everything but ssh
+			pre-made rule set
+			chris
+		snort
+			pre-made rules
+			vincent
+		tcpdump
+			pre-made rules
+monitoring
+	chkrootkit
+	htop
+	last and w
+	tcpdump
+sysadmin
+	apache
+	git
+	*lamp stack
+		chris
+	mail server
+		chris
+	mysql
+	printer
+	samba/nfs
+	voip
+	could segentment more or vlans?
+	vsphere client access, but only terminal view
 reading
 	game theory
 		hackingtheuniverse.com/infosec/isnews/ccdc-tips
@@ -43,18 +52,3 @@ reading
 		blog.cobaltstrike.com/2013/04/24/national-ccdc-red-team-fair-and-balanced
 		hecfblog.com/2013/04/nccdc-2013-lessons-learned.html
 		securingtomorrow.mcafee.com/executive-perspectives/nccdc-2013-red-team-recap
-tools
-	ansible
-	bmon
-	dstat
-	glances
-	gnome system monitor
-	htop
-	ifstat
-	kde system guard
-	onion os
-	snort
-	tcpdump
-	sysdig.org
-	w (actual command, see whos logged in and what doing)
-	wireshark
