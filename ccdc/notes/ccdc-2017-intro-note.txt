@@ -1,0 +1,8 @@
+Heard we are bringing some new blood on board. I'm excited to meet you in a few weeks, but the introductions can wait until then. What can't wait is that the CEO's new son-in-law is a salesperson for Palo Alto Networks and I'm pretty certain we will be investing in some PAN VM-100 firewalls. The only good news about this change is I was able to get you guys accounts to learn about this tech before you start.
+
+To access the training Moodle go to https://www.panacademy.net, it will show you how to work these new fangled devices. Your access creds are First initial Last name all lowercase (So John Smith would be jsmith). Everyone's password is <redacted> until you change it. Appearently a few of you already had accounts, and if so use those creds instead.
+
+Additionally, they have provided a lab space for you to use. To get access to this lab space have your reference (I think you call'd them 'Coach' in your Resume) email for access. I sent Coach the instructions, but you may have to remind them.
+
+Alright, well I think I'm going to be late for my hot yoga class before I go on my yearly tech fast in the Tierra Del Fuego.
+

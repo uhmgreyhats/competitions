@@ -1,0 +1,78 @@
+starting
+	users - tyler
+		change credentials
+		bulk disable all accounts
+			careful of valid accounts used by services e.g. www-data
+		passwd
+			https://goo.gl/MJ7jm0
+		userdel
+			https://goo.gl/pnEFdH
+		make 'admin' user in sudo-ers group
+	firewall - mark
+		ufw
+			https://goo.gl/b1S7f6
+			https://goo.gl/yRXvKK
+			https://goo.gl/9GIOYo
+			https://goo.gl/CRrgwa
+			everything but ssh
+			pre-made rule set
+	software - hendricks
+		check sources
+			centos
+				/etc/yum.conf
+				/etc/yum.repos.d/*
+					goo.gl/F2v1Xv
+			deb
+				/etc/apt/sources.list
+					goo.gl/mp03kV
+			ubuntu
+				/etc/apt/sources.list
+					https://goo.gl/vvcUuj
+					https://goo.gl/GFsWBy
+					https://goo.gl/dlKWkj
+		apt update
+		apt upgrade
+monitoring
+	hendricks
+		chkrootkit
+			https://goo.gl/TD1Aoe
+		rkhunter
+			--rwo, show only warnings
+			--sk, don't wait for keypress
+			--nocolors, use black and white output
+			--logfile [file] write to a logfile (Default is /var/log/rkhunter.log)
+	mark
+		htop
+			https://goo.gl/JA05Pc
+	tyler
+		last
+			https://goo.gl/hVR4K3
+		w
+			https://goo.gl/rT48gv
+	tbd
+		snort
+			aboutdebian.com/snort.htm
+			https://goo.gl/mmae1Y
+			https://goo.gl/QUaXjD
+			https://goo.gl/XU51nC
+			snort.org
+		tripwire
+			https://goo.gl/Osx5OR
+		tcpdump
+			https://goo.gl/b1S7f6
+sysadmin/devops
+	chris
+		lamp stack
+			https://goo.gl/kpflsP
+			https://goo.gl/zbxTbw
+	mark
+		git server
+			https://goo.gl/IDukxf
+	tyler
+		mail server
+			https://goo.gl/0SW3qj
+	hendricks
+		samba
+			https://goo.gl/4cCO3q
+		nfs
+			https://goo.gl/XiX2kC

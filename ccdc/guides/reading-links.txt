@@ -1,0 +1,13 @@
+reading
+	game theory
+		hackingtheuniverse.com/infosec/isnews/ccdc-tips
+	guides
+		cyberpatriotarchives.com/Checklists.php
+		netresec.com/?page=MACCDC
+		sites.google.com/site/howtoccdc/resources/technical/tools
+	red team write up
+		alexlevinson.wordpress.com/2013/04/24/ccdc-2013-red-team-feedback/
+		bit.ly/rmudge_derbycon
+		blog.cobaltstrike.com/2013/04/24/national-ccdc-red-team-fair-and-balanced
+		hecfblog.com/2013/04/nccdc-2013-lessons-learned.html
+		securingtomorrow.mcafee.com/executive-perspectives/nccdc-2013-red-team-recap
