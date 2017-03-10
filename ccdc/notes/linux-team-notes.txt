@@ -16,6 +16,7 @@ starting
 			https://goo.gl/CRrgwa
 			everything but ssh
 			pre-made rule set
+		fail2ban
 	software - hendricks
 		check sources
 			centos
