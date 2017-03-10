@@ -61,6 +61,7 @@ monitoring
 			https://goo.gl/Osx5OR
 		tcpdump
 			https://goo.gl/b1S7f6
+		watch
 sysadmin/devops
 	chris
 		lamp stack
