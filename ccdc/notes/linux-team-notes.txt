@@ -1,53 +1,19 @@
-starting
-	users
-		change credentials
-		bulk disable all accounts
-			careful of valid accounts used by services e.g. www-data
-		passwd
-			https://goo.gl/MJ7jm0
-		userdel
-			https://goo.gl/pnEFdH
-		make 'admin' user in sudo-ers group
-		last
-		w
-	software - hendricks
-		check sources
-			ubuntu
-				/etc/apt/sources.list
-					https://goo.gl/vvcUuj
-					https://goo.gl/GFsWBy
-					https://goo.gl/dlKWkj
-		apt update
-		apt upgrade
-monitoring
-	hendricks
-		chkrootkit
-			https://goo.gl/TD1Aoe
-		rkhunter
-			--rwo, show only warnings
-			--sk, don't wait for keypress
-			--nocolors, use black and white output
-			--logfile [file] write to a logfile (Default is /var/log/rkhunter.log)
-	mark
-		htop
-			https://goo.gl/JA05Pc
-	tyler
-		last
-			https://goo.gl/hVR4K3
-		w
-			https://goo.gl/rT48gv
-sysadmin/devops
-	chris
-		lamp stack - goo.gl/kpflsP
-			sudo apt-get update
-			sudo apt-get install apache2
-			ifconfig eth0 | grep inet | awk '{ print $2 }'
-			sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
-			sudo mysql_install_db
-			sudo /usr/bin/mysql_secure_installation
-			...
-			sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
-			[link]
-		git lab - goo.gl/IYuRM5
-		git server - goo.gl/IDukxf
-		mail server
+users
+	chkrootkit
+	htop P
+	last -n 20
+	passwd
+		lock: passwd -l <user>
+		unlock: passwd -u <user>
+	rkhunter -c --rwo --sk --logfile out-texting.txt
+	sources - goo.gl/vvcUuj
+	userdel - goo.gl/pnEFdH
+		remove: userdel -r -f <user>
+	w -si
+devops
+	lamp stack - goo.gl/kpflsP
+	git lab
+		goo.gl/IYuRM5
+		goo.gl/FL7Jmz
+	git server - goo.gl/IDukxf
+	mail server
