@@ -11,9 +11,68 @@ users
 		remove: userdel -r -f <user>
 	w -si
 devops
-	lamp stack - goo.gl/kpflsP
-	git lab
+	dns
+		ad1.corp.ccdc (192.168.64.10)
+		ad1.isp.ccdc (192.168.3.10)
+		certs
+			https://ad1.corp.ccdc/cersrv
+		windows dns
+			ad1.rws.ccdc (192.168.4.10)
+			---
+			administrator/R00tp@ss
+	gitlab.rws.ccdc (192.168.4.60)
+		gitlab 80
+		ssh 22
+		---
+		git server - goo.gl/IDukxf
 		goo.gl/IYuRM5
 		goo.gl/FL7Jmz
-	git server - goo.gl/IDukxf
-	mail server
+		---
+		mgr/mgr
+		root/roopass (typo?)
+		root/5iveL!fe (gitlab service login)
+	lamp stack - goo.gl/kpflsP
+	mail.rws.ccdc (192.168.4.30)
+		goo.gl/tGDd5G
+		imap 143, 993
+		smtp 25, 2525, 465
+		webmail(pop3) 110, 995
+		---
+		add user
+			adddovecotuser <uname>@rws.ccdc
+			<pass>
+			<pass>
+		del user
+			deldovecotuser <uname>@rws.ccdc
+			y
+			y
+		---
+		administrator/mailpass
+		postbot/mail
+		webmaster/mail
+		support/supportpass
+	mysql.rws.ccdc (192.168.4.50)
+		ssh 22
+		mysql
+		---
+		mgr/mgr
+		root/rootpass (mysql)
+	thames.rws.ccdc (192.168.4.70)
+		php 5.3.10
+		mysql 5.5
+		apache2 2.2
+		osticket 1.9.12-32
+		---
+		system
+			issuetracker/rootpass
+			root/rootpass
+		mysql
+			osticket/osticket
+			root/rootpass
+	www.rws.ccdc || www-dev.rws.ccdc (192.168.4.20)
+		web server 80
+		django
+		---
+		root/r00tpass!
+		itstaff/letmein
+		jdyoung/Enzo2002 (django)
