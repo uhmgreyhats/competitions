@@ -1,5 +1,5 @@
 starting
-	users - tyler
+	users
 		change credentials
 		bulk disable all accounts
 			careful of valid accounts used by services e.g. www-data
@@ -8,24 +8,10 @@ starting
 		userdel
 			https://goo.gl/pnEFdH
 		make 'admin' user in sudo-ers group
-	firewall - mark
-		ufw
-			https://goo.gl/b1S7f6
-			https://goo.gl/yRXvKK
-			https://goo.gl/9GIOYo
-			https://goo.gl/CRrgwa
-			everything but ssh
-			pre-made rule set
-		fail2ban
+		last
+		w
 	software - hendricks
 		check sources
-			centos
-				/etc/yum.conf
-				/etc/yum.repos.d/*
-					goo.gl/F2v1Xv
-			deb
-				/etc/apt/sources.list
-					goo.gl/mp03kV
 			ubuntu
 				/etc/apt/sources.list
 					https://goo.gl/vvcUuj
@@ -50,31 +36,18 @@ monitoring
 			https://goo.gl/hVR4K3
 		w
 			https://goo.gl/rT48gv
-	tbd
-		snort
-			aboutdebian.com/snort.htm
-			https://goo.gl/mmae1Y
-			https://goo.gl/QUaXjD
-			https://goo.gl/XU51nC
-			snort.org
-		tripwire
-			https://goo.gl/Osx5OR
-		tcpdump
-			https://goo.gl/b1S7f6
-		watch
 sysadmin/devops
 	chris
-		lamp stack
-			https://goo.gl/kpflsP
-			https://goo.gl/zbxTbw
-	mark
-		git server
-			https://goo.gl/IDukxf
-	tyler
+		lamp stack - goo.gl/kpflsP
+			sudo apt-get update
+			sudo apt-get install apache2
+			ifconfig eth0 | grep inet | awk '{ print $2 }'
+			sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+			sudo mysql_install_db
+			sudo /usr/bin/mysql_secure_installation
+			...
+			sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+			[link]
+		git lab - goo.gl/IYuRM5
+		git server - goo.gl/IDukxf
 		mail server
-			https://goo.gl/0SW3qj
-	hendricks
-		samba
-			https://goo.gl/4cCO3q
-		nfs
-			https://goo.gl/XiX2kC
