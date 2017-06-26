@@ -10,17 +10,17 @@ Location: University of Hawaii at West Oahu
 
 ## [Log Analysis](Log_Analysis/README.md)
 
-## Network Traffic Analysis
+## [Network Traffic Analysis](Network_Traffic_Analysis/README.md)
 
-## Open Source Intelligence
+## [Open Source Intelligence](Open_Source_Intelligence/README.md)
 
-## Password Cracking
+## [Password Cracking](Password_Cracking/README.md)
 
-## Web Application Exploitation
+## [Web Application Exploitation](Web_Application_Exploitation/README.md)
 
-## Wireless Access Exploitation
+## [Wireless Access Exploitation](Wireless_Access_Exploitation/README.md)
 
-## zScenario
+## [zScenario](zScenario/README.md)
 
 ### Grey Hats Members Present
 - Tyler Chong
