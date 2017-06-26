@@ -1,14 +1,14 @@
 # Network Traffic Analysis
 
 ## Challenges (Solved 3 of 10)
-- **[Cisco OSPF](Challenges/1-Cisco_OSPF/README.md)**
+- **[Cisco OSPF](Challenges/1-Cisco_OSPF)**
 - ExfiltratePrinter
 - Hotel California
 - PcapForensic
-- **[SNORT this](Challenges/5-SNORT_this/README.md)**
+- **[SNORT this](Challenges/5-SNORT_this)**
 - Shark week came early
 - Soapy
-- **[WebsiteVisitation](Challenges/8-WebsiteVisitation/README.md)**
+- **[WebsiteVisitation](Challenges/8-WebsiteVisitation)**
 - gimmeaguess
 - no-big-deal
 
