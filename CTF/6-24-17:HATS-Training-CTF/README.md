@@ -4,23 +4,23 @@ Location: University of Hawaii at West Oahu
 
 # CTF Categories
 
-## [Binary Exploitation](Binary_Exploitation/README.md)
+## [Binary Exploitation](Binary_Exploitation)
 
-## [Cryptography](Cryptography/README.md)
+## [Cryptography](Cryptography)
 
-## [Log Analysis](Log_Analysis/README.md)
+## [Log Analysis](Log_Analysis)
 
-## [Network Traffic Analysis](Network_Traffic_Analysis/README.md)
+## [Network Traffic Analysis](Network_Traffic_Analysis)
 
-## [Open Source Intelligence](Open_Source_Intelligence/README.md)
+## [Open Source Intelligence](Open_Source_Intelligence)
 
-## [Password Cracking](Password_Cracking/README.md)
+## [Password Cracking](Password_Cracking)
 
-## [Web Application Exploitation](Web_Application_Exploitation/README.md)
+## [Web Application Exploitation](Web_Application_Exploitation)
 
-## [Wireless Access Exploitation](Wireless_Access_Exploitation/README.md)
+## [Wireless Access Exploitation](Wireless_Access_Exploitation)
 
-## [zScenario](zScenario/README.md)
+## [zScenario](zScenario)
 
 ### Grey Hats Members Present
 - Tyler Chong
