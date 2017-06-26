@@ -59,4 +59,4 @@ Here's this access log. Better get them all.
 5. Earliest Version?
 6. Look for smallest version number
 7. See that its '20100101'
-8. egrep -i '20100101' access.log | wc -l
+8. `egrep -i '20100101' access.log | wc -l`
