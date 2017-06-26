@@ -4,7 +4,7 @@ Location: University of Hawaii at West Oahu
 
 # CTF Categories
 
-## Binary Exploitation
+## [Binary Exploitation](BinaryExploitation/README.md)
 
 ## Cryptography
 
@@ -21,3 +21,12 @@ Location: University of Hawaii at West Oahu
 ## Wireless Access Exploitation
 
 ## zScenario
+
+### Grey Hats Members Present
+- Tyler Chong
+- Sean Takafuji
+- Trevin Tejero
+- Vincent DiRienzo
+- Shaziney Natividad
+- Mark Cummins
+- Kalani Sanidad
