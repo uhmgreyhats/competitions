@@ -9,3 +9,6 @@ HPD obtained password dumps storing the criminal's passwords. It appears that th
 5. **608c0d8288afcc6b3e9d7982ffe23437**
 
 ## Steps
+1. Create a word list of Grey's Anatomy episodes. This can be done by parsing through https://en.wikipedia.org/wiki/List_of_Grey%27s_Anatomy_episodes
+2. With the word list, hash each episode followed by 000-999
+3. If the hashes were not found, try variations of the episode names including lowercase, no spaces, or a combination of both
