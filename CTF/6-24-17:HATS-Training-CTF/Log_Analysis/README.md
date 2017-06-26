@@ -1,16 +1,16 @@
 # Log Analysis
 
 ## Challenges (Solved 6 of 11)
-- **[ACT_SASS](Challenges/1-ACT_SASS/README.md)**
+- **[ACT_SASS](Challenges/1-ACT_SAS)**
 - DemLogs
-- **[Email Header](Challenges/3-Email_Header/README.md)**
+- **[Email Header](Challenges/3-Email_Header)**
 - My Japanese Penpal
 - Netstat PS
-- **[Netstat Tasklist](Challenges/6-Netstat_Tasklist/README.md)**
-- **[RetardedAdmin](Challenges/7-RetardedAdmin/README.md)**
-- **[applog](Challenges/8-applog/README.md)**
-- **[partialScanning](Challenges/9-partialScanning/README.md)**
-- **[squidlog](Challenges/10-squidlog/README.md)**
+- **[Netstat Tasklist](Challenges/6-Netstat_Tasklist)**
+- **[RetardedAdmin](Challenges/7-RetardedAdmin)**
+- **[applog](Challenges/8-applog)**
+- **[partialScanning](Challenges/9-partialScanning)**
+- **[squidlog](Challenges/10-squidlog)**
 - vsftpd
 
 ## Problems
