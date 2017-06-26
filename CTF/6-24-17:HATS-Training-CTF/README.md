@@ -4,11 +4,11 @@ Location: University of Hawaii at West Oahu
 
 # CTF Categories
 
-## [Binary Exploitation](BinaryExploitation/README.md)
+## [Binary Exploitation](Binary_Exploitation/README.md)
 
-## Cryptography
+## [Cryptography](Cryptography/README.md)
 
-## Log Analysis
+## [Log Analysis](Log_Analysis/README.md)
 
 ## Network Traffic Analysis
 
