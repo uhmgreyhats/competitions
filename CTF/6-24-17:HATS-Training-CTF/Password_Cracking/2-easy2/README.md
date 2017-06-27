@@ -9,3 +9,7 @@ HPD obtained password dumps storing the criminal's passwords. It appears that th
 5. **4a13674cff13916f37344198f066ae1a**
 
 ## Steps
+1. Get wordlist of rockyou breach
+2. Hash each word and compare to above hashes
+3. If equal print word
+4. Input word
