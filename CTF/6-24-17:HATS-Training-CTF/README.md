@@ -29,4 +29,4 @@ Location: University of Hawaii at West Oahu
 - Vincent DiRienzo
 - Shaziney Natividad
 - Mark Cummins
-- Kalani Sanidad?
+- Kalani Sanidad
