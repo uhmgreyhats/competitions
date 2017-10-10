@@ -9,7 +9,7 @@ Bobby is always visiting an unacceptable website via http. We need to to create 
 ## Steps
 
 ### Question 1
-1. Look up what a snort rule is
+1. Look up what a [snort rule is](http://resources.infosecinstitute.com/snort-rules-workshop-part-one/)
 2. Find a [generator](http://snorpy.com/)
 3. Plug in the information given and get the resulting snort rule
 
