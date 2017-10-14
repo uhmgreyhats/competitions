@@ -1,0 +1,71 @@
+
+Domain profile configuration:
+-------------------------------------------------------------------
+Operational mode                  = Enable
+Exception mode                    = Enable
+Multicast/broadcast response mode = Enable
+Notification mode                 = Enable
+
+Allowed programs configuration for Domain profile:
+Mode     Traffic direction    Name / Program
+-------------------------------------------------------------------
+
+Port configuration for Domain profile:
+Port   Protocol  Mode    Traffic direction     Name
+-------------------------------------------------------------------
+5357   TCP       Enable  Inbound               WS-Eventing TCP Port 5357
+
+ICMP configuration for Domain profile:
+Mode     Type  Description
+-------------------------------------------------------------------
+Enable   2     Allow outbound packet too big
+
+Standard profile configuration (current):
+-------------------------------------------------------------------
+Operational mode                  = Enable
+Exception mode                    = Enable
+Multicast/broadcast response mode = Enable
+Notification mode                 = Enable
+
+Service configuration for Standard profile:
+Mode     Customized  Name
+-------------------------------------------------------------------
+Enable   No          File and Printer Sharing
+Enable   No          Network Discovery
+
+Allowed programs configuration for Standard profile:
+Mode     Traffic direction    Name / Program
+-------------------------------------------------------------------
+Enable   Inbound              Steam Web Helper / C:\Program Files (x86)\Steam\bin\cef\cef.win7\steamwebhelper.exe
+Enable   Inbound              Steam / C:\Program Files (x86)\Steam\Steam.exe
+Enable   Inbound              Visual Studio Code / C:\program files (x86)\microsoft vs code\code.exe
+Enable   Inbound              IntelliJ IDEA / C:\program files\jetbrains\intellij idea community edition 2017.1.2\bin\idea64.exe
+Enable   Inbound              OpenJDK Platform binary / C:\program files\jetbrains\intellij idea community edition 2017.1.2\jre64\bin\java.exe
+Enable   Inbound              Java(TM) Platform SE binary / C:\program files\java\jdk1.8.0_131\bin\java.exe
+Enable   Inbound              Java(TM) Platform SE binary / C:\program files (x86)\minecraft\runtime\jre-x64\1.8.0_25\bin\javaw.exe
+
+Port configuration for Standard profile:
+Port   Protocol  Mode    Traffic direction     Name
+-------------------------------------------------------------------
+5357   TCP       Enable  Inbound               WS-Eventing TCP Port 5357
+
+ICMP configuration for Standard profile:
+Mode     Type  Description
+-------------------------------------------------------------------
+Enable   2     Allow outbound packet too big
+
+Log configuration:
+-------------------------------------------------------------------
+File location   = C:\WINDOWS\system32\LogFiles\Firewall\pfirewall.log
+Max file size   = 4096 KB
+Dropped packets = Disable
+Connections     = Disable
+
+IMPORTANT: Command executed successfully.
+However, "netsh firewall" is deprecated;
+use "netsh advfirewall firewall" instead.
+For more information on using "netsh advfirewall firewall" commands
+instead of "netsh firewall", see KB article 947709
+at http://go.microsoft.com/fwlink/?linkid=121488 .
+
+
