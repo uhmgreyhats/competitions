@@ -1,0 +1,2 @@
+There are 2 ways of doing this. Look through the log file it self to find the flag, or 
+open the log file in wireshark and the flag can be found easily after locating the frames of the file transfer.

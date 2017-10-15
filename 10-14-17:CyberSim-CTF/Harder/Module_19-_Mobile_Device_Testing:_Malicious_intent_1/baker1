@@ -1,0 +1,16 @@
+private void permissions(String paramString)
+{
+ try
+	{
+	 String[] arrayOfString = new String[3];
+	 arrayOfString[0] = "/system/bin/sh";
+	 arrayOfString[1] = "-c";
+	 StringBuilder localStringBuilder = new StringBuilder();
+	 arrayOfString[2] = ("chmod 755 /data/data/" + getPackageName() + "/app_files/" + paramString);
+	 Runtime.getRuntime().exec(arrayOfString);
+	 return;
+	}
+	catch (Exception localException)
+	{
+	 Log.e("tag", localException.getMessage());
+	}

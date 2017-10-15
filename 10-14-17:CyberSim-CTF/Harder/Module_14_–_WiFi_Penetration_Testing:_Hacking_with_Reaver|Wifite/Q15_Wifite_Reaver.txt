@@ -1,0 +1,8 @@
+Solution Explanation for PenTest Module 14 WiFi Penetration Testing 15
+
+Reaver and Wifite prey on open WPS in access points. The screenshot
+output is seen after the wifite is typed into linux command line.
+I used Kali Linux which already had wifite installed.It showed that
+there were three access points that had WPS enabled: Verizon-291LW-DE3C,
+NETGEAR08 and, NETGEAR18. WPS enabling allows tools like reaver and 
+wifite to obtain the keys and passphrases. 
