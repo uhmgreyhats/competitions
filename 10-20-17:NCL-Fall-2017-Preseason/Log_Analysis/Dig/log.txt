@@ -1,0 +1,121 @@
+; <<>> DiG 9.9.5-3ubuntu0.13-Ubuntu <<>> @208.67.220.220 reddit.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 42130
+;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;reddit.com.      IN  A
+
+;; ANSWER SECTION:
+reddit.com.   191 IN  A 151.101.65.140
+reddit.com.   191 IN  A 151.101.1.140
+reddit.com.   191 IN  A 151.101.193.140
+reddit.com.   191 IN  A 151.101.129.140
+
+;; Query time: 2 msec
+;; SERVER: 208.67.220.220#53(208.67.220.220)
+;; WHEN: Sat Apr 15 18:42:39 EDT 2017
+;; MSG SIZE  rcvd: 103
+
+; <<>> DiG 9.9.5-3ubuntu0.13-Ubuntu <<>> @208.67.220.220 reddit.com ANY
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 44886
+;; flags: qr rd ra; QUERY: 1, ANSWER: 10, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;reddit.com.      IN  ANY
+
+;; ANSWER SECTION:
+reddit.com.   58  IN  A 151.101.129.140
+reddit.com.   58  IN  A 151.101.65.140
+reddit.com.   58  IN  A 151.101.1.140
+reddit.com.   58  IN  A 151.101.193.140
+reddit.com.   168244  IN  NS  ns-1029.awsdns-00.org.
+reddit.com.   168244  IN  NS  ns-1887.awsdns-43.co.uk.
+reddit.com.   168244  IN  NS  ns-378.awsdns-47.com.
+reddit.com.   168244  IN  NS  ns-557.awsdns-05.net.
+reddit.com.   801 IN  SOA ns-557.awsdns-05.net. awsdns-hostmaster.amazon.com. 1 7200 900 1209600 86400
+reddit.com.   3520  IN  TXT "v=spf1 include:_spf.google.com include:mailgun.org a:mail.reddit.com ip4:174.129.203.189 ip4:52.205.61.79 ip4:54.172.97.247 ~all"
+
+;; Query time: 3 msec
+;; SERVER: 208.67.220.220#53(208.67.220.220)
+;; WHEN: Sat Apr 15 18:43:36 EDT 2017
+;; MSG SIZE  rcvd: 442
+
+; <<>> DiG 9.9.5-3ubuntu0.13-Ubuntu <<>> @208.67.220.220 mail.reddit.com
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 33301
+;; flags: qr rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;mail.reddit.com.   IN  A
+
+;; ANSWER SECTION:
+mail.reddit.com.  300 IN  CNAME reddit.map.fastly.net.
+reddit.map.fastly.net.  28  IN  A 151.101.65.140
+reddit.map.fastly.net.  28  IN  A 151.101.129.140
+reddit.map.fastly.net.  28  IN  A 151.101.1.140
+reddit.map.fastly.net.  28  IN  A 151.101.193.140
+
+;; Query time: 22 msec
+;; SERVER: 208.67.220.220#53(208.67.220.220)
+;; WHEN: Sat Apr 15 18:43:53 EDT 2017
+;; MSG SIZE  rcvd: 143
+
+; <<>> DiG 9.9.5-3ubuntu0.13-Ubuntu <<>> @208.67.220.220 mail.reddit.com MX
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 7177
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;mail.reddit.com.   IN  MX
+
+;; ANSWER SECTION:
+mail.reddit.com.  20  IN  CNAME reddit.map.fastly.net.
+
+;; AUTHORITY SECTION:
+fastly.net.   30  IN  SOA ns1.fastly.net. hostmaster.fastly.com. 2016110301 3600 600 604800 30
+
+;; Query time: 2 msec
+;; SERVER: 208.67.220.220#53(208.67.220.220)
+;; WHEN: Sat Apr 15 18:43:55 EDT 2017
+;; MSG SIZE  rcvd: 150
+
+; <<>> DiG 9.9.5-3ubuntu0.13-Ubuntu <<>> @208.67.220.220 reddit.map.fastly.net
+; (1 server found)
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 22621
+;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;reddit.map.fastly.net.   IN  A
+
+;; ANSWER SECTION:
+reddit.map.fastly.net.  18  IN  A 151.101.1.140
+reddit.map.fastly.net.  18  IN  A 151.101.193.140
+reddit.map.fastly.net.  18  IN  A 151.101.65.140
+reddit.map.fastly.net.  18  IN  A 151.101.129.140
+
+;; Query time: 2 msec
+;; SERVER: 208.67.220.220#53(208.67.220.220)
+;; WHEN: Sat Apr 15 18:44:10 EDT 2017
+;; MSG SIZE  rcvd: 114
