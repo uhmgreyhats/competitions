@@ -6,5 +6,5 @@ Our officers have obtained password dumps storing hacker passwords. After obtain
 2. 3477686963684649454c4437
 
 ## Answers
-1. 45squarewhole56
-2. 4whichFIELD7
+1. 45squarewhole56 (Base64)
+2. 4whichFIELD7 (Base16)
