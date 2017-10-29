@@ -12,7 +12,7 @@ The Incident Response team has provided you with the contents of the /var/log di
 
 ## Answers
 1. ubuntu-host
-2.
+2. Ubuntu 14.04.1
 3. redis
 4. 
 5. 182.231.24.12
