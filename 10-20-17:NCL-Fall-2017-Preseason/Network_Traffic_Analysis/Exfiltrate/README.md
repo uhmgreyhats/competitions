@@ -12,7 +12,7 @@ Someone exfiltrated some top secret file from the organization network. Help us 
 ## Answers
 1. 172.16.102.135
 2. dropbox
-3.
+3. Google Drive
 4. cybercybercyber
 5. 10.0.0.35
 6. SKY-TWMA-0371
