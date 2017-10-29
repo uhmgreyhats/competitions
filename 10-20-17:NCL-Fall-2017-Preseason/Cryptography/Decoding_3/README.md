@@ -6,3 +6,6 @@ Police found an picture during a raid and need your help in decoding it.
 
 ## Answers
 1. If I am caught, continue without me. fr0zen will know what comes next.
+
+## Resources
+https://en.wikipedia.org/wiki/Wingdings
