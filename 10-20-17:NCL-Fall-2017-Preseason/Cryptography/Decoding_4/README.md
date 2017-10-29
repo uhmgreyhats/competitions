@@ -8,3 +8,6 @@ Our officers have obtained some encrypted messages. See if you can decode them.
 ## Answers
 1. NCL-IXHK-5132
 2. NCL-IXHK-3888
+
+## Resources
+http://www.dcode.fr/caesar-cipher
