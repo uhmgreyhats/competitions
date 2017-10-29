@@ -6,3 +6,6 @@ Our officers have obtained an encrypted message. The forensics team was able to 
 
 ## Answers
 1. Has @lpha1 reported back yet? Haven't heard from them all day.
+
+## Resources
+http://rumkin.com/tools/cipher/vigenere-keyed.php
