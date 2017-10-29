@@ -42,7 +42,7 @@ Knowing the Caesar Cipher encryption method is good since many easy/beginner lev
 
 ## Challenge Two
 
-![Briefing](/assets/Level1/Challenge2/briefing.png)
+![Briefing](assets/Level1/Challenge2/briefing.png)
 
 ### Initial Thoughts
 
@@ -50,7 +50,7 @@ Looking through the briefing, we can see that we are tasked with finding out som
 
 ### What actually happened
 
-![Body](/assets/Level1/Challenge2/challenge.png)
+![Body](assets/Level1/Challenge2/challenge.png)
 
 Looking at the page, we see what looks to be a typical login screen with the username and favorite color fields filled in. This fits what was told to us in the briefing, that we already have two pieces of information, his username and his favorite color, and that we just need to find out his age.
 
@@ -64,11 +64,11 @@ All in all, this was a pretty simple challenge. We found out the person's age by
 
 ### Initial Thoughts
 
-![Briefing](/assets/Level1/Challenge3/briefing.png)
+![Briefing](assets/Level1/Challenge3/briefing.png)
 
 ### What actually happened
 
-![Body](/assets/Level1/Challenge3/challenge.png)
+![Body](assets/Level1/Challenge3/challenge.png)
 Reading through the briefing, we see that we need to find out which email is fake, and click the part of the email that lets you know that it is fake.
 
 Looking at the emails, we can see that each email has two parts. The header, which contains the sender and receiver of the email, and the body, which contains the message of the email.
@@ -76,7 +76,7 @@ Looking at the emails, we can see that each email has two parts. The header, whi
 Reading through all of the email bodies, everything seems normal. Nothing stands out as being too shady, so we know that the part that reveals the email as fake must be in an email header somewhere.
 
 Reading through all of the headers closely, we find this.
-![Step One](/assets/Level1/Challenge3/one.png)
+![Step One](assets/Level1/Challenge3/one.png)
 
 Everything about this email header looks normal except for the fact that natwestt.com has two t's in it, Uh Oh. The sender tried to trick us into believing that they were an organization that has a similar name. We click on this part of the email, and receive our flag.
 
@@ -88,17 +88,17 @@ This challenge displays the potential dangers of not checking who an email is co
 
 ### Initial Thoughts
 
-![Briefing](/assets/Level1/Challenge4/briefing.png)
+![Briefing](assets/Level1/Challenge4/briefing.png)
 
 ### What actually happened
 
-![Body](/assets/Level1/Challenge4/challenge.png)
+![Body](assets/Level1/Challenge4/challenge.png)
 Looking at the email, we see a list of customers next to a bunch of seemingly random numbers.
 We got a hint from the briefing that none of the numbers went over 26, which hints towards a simple A1Z26 cipher, in which each letter is represented by its numerical order in the alphabet. A = 1, B = 2,.. Z = 26.
 
 Knowing this, we can just use any [online tool](http://rumkin.com/tools/cipher/numbers.php) to solve this cipher.
 
-![Step One](/assets/Level1/Challenge4/one.png)
+![Step One](assets/Level1/Challenge4/one.png)
 
 Pasting in the numbers into the solver, we can see that the secret is 'WHEEL'. This is our flag.
 
@@ -109,10 +109,10 @@ From the email, we recognized the type of encoding used to hide the secret messa
 ## Challenge Five
 
 ### Initial Thoughts
-![Briefing](/assets/Level1/Challenge5/briefing.png)
+![Briefing](assets/Level1/Challenge5/briefing.png)
 
 ### What actually happened
-![Body](/assets/Level1/Challenge5/challenge.png)
+![Body](assets/Level1/Challenge5/challenge.png)
 Looking at the website, we see what looks to be a flier for a Canal Race. In the briefing, they hinted towards there being some hidden text somewhere on the page. The best way to find hidden items on a webpage is to open up the developer tools, so lets do just that.
 
 If you are using Google Chrome, you can either
@@ -121,13 +121,13 @@ If you are using Google Chrome, you can either
 
 After opening your developer tools, the page should look something like this.
 
-![Step One](/assets/Level1/Challenge5/one.png)
+![Step One](assets/Level1/Challenge5/one.png)
 
 If you are on a different tab, you should switch over to the `elements` tab. This tab contains information about all the elements on the page, and is the perfect tab for finding hidden items on webpages.
 
 Using your arrow keys, you can navigate through all the elements on the webpage. As you can see in this picture, I have selected the logo of the page in the developer tools, and on the actual webpage this item is highlighted.
 
-![Step Two](/assets/Level1/Challenge5/two.png)
+![Step Two](assets/Level1/Challenge5/two.png)
 
 Wait, what's that? Looking closer at this picture, we see that there is a div on the page containing the text "Go to /secret.html".
 `<div class="quiet">Go to /secret.html</div>`
@@ -136,7 +136,7 @@ This must be the hidden text we were looking for, since this text isn't visible 
 
 Navigating to /secret.html through their built in web browser, we get our flag.
 
-![Step Three](/assets/Level1/Challenge5/three.png)
+![Step Three](assets/Level1/Challenge5/three.png)
 
 ### Final Thoughts
 If you are looking for hidden items on a webpage, it is imperative that you look through the elements on the page through your browser's developer tools. Staring at the page itself will only get you so far, since the developer of the website could use either styling or code to hide items on the page.
@@ -150,7 +150,7 @@ If you are looking for hidden items on a webpage, it is imperative that you look
 ![Challenge](assets/Level1/Challenge6/challenge.png)
 Going into the challenge, we see a Tower of Hanoi game set up for us. In the top left, we can put in commands to move the discs (`move("left", "mid")`, `move("right", "left")`, ..etc). This moves the disc from the first argument (left, right, mid), to the second argument (left, right, mid). It seems all we have to do here is win the game (move all the discs from the left pole to the right pole), and it will give us the flag.
 
-![Step One](/assets/Level1/Challenge6/one.png)
+![Step One](assets/Level1/Challenge6/one.png)
 
 Yep!
 
@@ -161,14 +161,14 @@ This challenge just tested if you knew how to correctly invoke functions, as wel
 ## Challenge Seven
 
 ### Initial Thoughts
-![Briefing](/assets/Level1/Challenge7/briefing.png)
+![Briefing](assets/Level1/Challenge7/briefing.png)
 It looks like we are going to have to decode some ASCII encoded text into a readable format.
 
 ### What actually happened
 ![Challenge](assets/Level1/Challenge7/challenge.png)
 Looking at the challenge, we see an order form. On the left side of the page, we see a bunch of RGB colors. The briefing (and the fact that we are provided an ASCII Table), both hint towards converting ASCII into text. All we have to do now is found any [online tool](https://convert.town/ascii-to-text) and put in those values to get the secret.
 
-![Step one](/assets/Level1/Challenge7/one.png)
+![Step one](assets/Level1/Challenge7/one.png)
 
 From this we can see that the secret hat code is 'BOTTLE'. This is our flag.
 
@@ -178,7 +178,7 @@ This, like many of the other challenges on level one was pretty easy. All we had
 ## Challenge Eight
 
 ### Initial Thoughts
-![Briefing](/assets/Level1/Challenge8/briefing.png)
+![Briefing](assets/Level1/Challenge8/briefing.png)
 
 We are going to have to decode some message, and our flag is the two colors put together.
 
@@ -192,7 +192,7 @@ Are the challenges getting easier? Or am I getting smarter :insert dinosaur thin
 ## Challenge Nine
 
 ### Initial Thoughts
-![Briefing](/assets/Level1/Challenge9/briefing.png)
+![Briefing](assets/Level1/Challenge9/briefing.png)
 
 The briefing tells us that we are going to have to fix an image inside if the source code, easy enough.. right?
 
@@ -216,7 +216,7 @@ Knowing your way around the browser's developer tools is very helpful in finding
 ## Challenge Ten
 
 ### Initial Thoughts
-![Briefing](/assets/Level1/Challenge10/briefing.png)
+![Briefing](assets/Level1/Challenge10/briefing.png)
 
 It looks like we are going to have to look through a bunch of files and find out which one we can execute, seems easy enough.
 
@@ -232,7 +232,7 @@ Looking at all of the file extensions, we can recognize some of the more common 
 ## Challenge Eleven
 
 ### Initial Thoughts
-![Briefing](/assets/Level1/Challenge11/briefing.png)
+![Briefing](assets/Level1/Challenge11/briefing.png)
 
 We are going to have to find the report for the first user. Here we go.
 
