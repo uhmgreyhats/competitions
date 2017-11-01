@@ -1,0 +1,3 @@
+# MEPX
+
+This Packed Executable seems to be using some kind of anti-static analysis technique during unpacking. There must be another way...
