@@ -1,0 +1,650 @@
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+-- -----------------------------------------------------
+-- Schema hospital
+-- -----------------------------------------------------
+DROP DATABASE IF EXISTS hospital;
+
+CREATE DATABASE hospital;
+
+-- -----------------------------------------------------
+-- Schema hospital
+-- -----------------------------------------------------
+
+USE `hospital` ;
+
+-- -----------------------------------------------------
+-- Table `hospital`.`Symptom`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`Symptom` (
+  `SymptomID` INT NOT NULL AUTO_INCREMENT,
+  `SymptomName` VARCHAR(50) NULL DEFAULT NULL,
+  `SymptomCode` VARCHAR(10) NULL DEFAULT NULL,
+  `SymptomDesc` VARCHAR(100) NULL DEFAULT NULL,
+  PRIMARY KEY (`SymptomID`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `hospital`.`FrontDesk`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`FrontDesk` (
+  `FrontDeskID` INT NOT NULL AUTO_INCREMENT,
+  `FrontDeskFName` VARCHAR(50) NULL DEFAULT NULL,
+  `FrontDeskLName` VARCHAR(50) NULL DEFAULT NULL,
+  PRIMARY KEY (`FrontDeskID`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `hospital`.`Appointment`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`Appointment` (
+  `AppointmentID` INT NOT NULL AUTO_INCREMENT,
+  `AppointmentDate` DATE NULL DEFAULT NULL,
+  `AppointmentDesc` VARCHAR(100) NULL DEFAULT NULL,
+  `FrontDesk_FrontDeskID` INT NOT NULL,
+  `AppointmentDocID` INT NOT NULL,
+  PRIMARY KEY (`AppointmentID`)
+    )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+-- -----------------------------------------------------
+-- Table `hospital`.`Facility`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`Facility` (
+  `FacilityID` INT NOT NULL AUTO_INCREMENT,
+  `FacilityType` VARCHAR(50) NULL DEFAULT NULL,
+  `FacilityAvail` VARCHAR(1) NULL DEFAULT NULL,
+  `FacilityHrOperation` DATE NULL DEFAULT NULL,
+  `FacilityName` VARCHAR(50) NULL DEFAULT NULL,
+  `FacilityStreetNo` VARCHAR(10) NULL DEFAULT NULL,
+  `FacilityStreetName` VARCHAR(50) NULL DEFAULT NULL,
+  `FacilityCity` VARCHAR(50) NULL DEFAULT NULL,
+  `FacilityState` VARCHAR(2) NULL DEFAULT NULL,
+  `FacilityZip` VARCHAR(5) NULL DEFAULT NULL,
+  `FacilityPhone` VARCHAR(10) NULL DEFAULT NULL,
+  PRIMARY KEY (`FacilityID`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `hospital`.`Patient`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`Patient` (
+  `PatientID` INT NOT NULL AUTO_INCREMENT,
+  `PatientSSN` VARCHAR(9) NOT NULL DEFAULT '000000000',
+  `PatientFname` VARCHAR(50) NULL DEFAULT NULL,
+  `PatientLname` VARCHAR(50) NULL DEFAULT NULL,
+  `PatientGender` CHAR(1) NULL DEFAULT NULL,
+  `PatientBirthDate` DATE NULL DEFAULT NULL,
+  `PatientStreetNo` VARCHAR(10) NULL DEFAULT NULL,
+  `PatientStreetName` VARCHAR(50) NULL DEFAULT NULL,
+  `PatientAptNo` VARCHAR(20) NULL DEFAULT NULL,
+  `PatientCity` VARCHAR(50) NULL DEFAULT NULL,
+  `PatientState` VARCHAR(2) NULL DEFAULT NULL,
+  `PatientZip` VARCHAR(5) NULL DEFAULT NULL,
+  `PatientHomePhone` VARCHAR(10) NULL DEFAULT NULL,
+  `PatientCellPhone` VARCHAR(10) NULL DEFAULT NULL,
+  `PatientEmailAddress` VARCHAR(50) NULL DEFAULT NULL,
+  `InsurancePolicyNumber` VARCHAR(50) NULL,
+  `InsuranceCompID` INT NULL,
+  `Patientcol` VARCHAR(45) NULL,
+  PRIMARY KEY (`PatientID`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `hospital`.`Treatment`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`Treatment` (
+  `TreatmentID` INT NOT NULL AUTO_INCREMENT,
+  `TreatmentName` VARCHAR(50) NULL DEFAULT NULL,
+  `TreatmentType` VARCHAR(50) NULL DEFAULT NULL,
+  `TreatmentDate` DATE NULL DEFAULT NULL,
+  `TreatmentCode` VARCHAR(10) NULL DEFAULT NULL,
+  `TreatmentDesc` VARCHAR(100) NULL DEFAULT NULL,
+  PRIMARY KEY (`TreatmentID`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `hospital`.`MedicalAssistant`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`MedicalAssistant` (
+  `MedicalAssistantID` INT NOT NULL AUTO_INCREMENT,
+  `MedicalAssistantName` VARCHAR(50) NULL DEFAULT NULL,
+  PRIMARY KEY (`MedicalAssistantID`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `hospital`.`Doctor`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`Doctor` (
+  `DoctorID` INT NOT NULL AUTO_INCREMENT,
+  `DoctorFname` VARCHAR(50) NULL DEFAULT NULL,
+  `DoctorLname` VARCHAR(50) NULL DEFAULT NULL,
+  `DoctorStreetNo` VARCHAR(10) NULL DEFAULT NULL,
+  `DoctorStreetName` VARCHAR(50) NULL DEFAULT NULL,
+  `DoctorCity` VARCHAR(50) NULL DEFAULT NULL,
+  `DoctorState` VARCHAR(2) NULL DEFAULT NULL,
+  `DoctorZip` VARCHAR(5) NULL DEFAULT NULL,
+  `DoctorHomePhone` VARCHAR(10) NULL DEFAULT NULL,
+  `DoctorCellPhone` VARCHAR(10) NULL DEFAULT NULL,
+  `DoctorEmailAddress` VARCHAR(50) NULL DEFAULT NULL,
+  `DoctorSpeciality` VARCHAR(50) NULL DEFAULT NULL,
+  `DoctorSalary` DECIMAL(8,2) NULL DEFAULT NULL,
+  PRIMARY KEY (`DoctorID`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `hospital`.`User`
+-- -----------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS `hospital`.`User` (
+  `uid` varchar(64) NOT NULL,
+  `LastName` varchar(64) NULL DEFAULT NULL,
+  `FirstName` varchar(64) NULL DEFAULT NULL,
+  `Email` varchar(64) NULL DEFAULT NULL,
+  `Password` varchar(64) NULL DEFAULT NULL,
+  PRIMARY KEY (`uid`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+-- -----------------------------------------------------
+-- Table `hospital`.`DoctorMA`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`DoctorMA` (
+  `docmaid` INT NOT NULL,
+  `maid` INT NOT NULL,
+  PRIMARY KEY (`docmaid`, `maid`)
+)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+-- -----------------------------------------------------
+-- Table `hospital`.`PatientAppointment`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`PatientAppointment` (
+  `patappid` INT NOT NULL,
+  `apptid` INT NOT NULL,
+  PRIMARY KEY (`patappid`, `apptid`)
+  )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+-- -----------------------------------------------------
+-- Table `hospital`.`InsuranceCompany`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`InsuranceCompany` (
+  `InsuranceCompID` INT NOT NULL AUTO_INCREMENT,
+  `InsuranceCompName` VARCHAR(50) NULL DEFAULT NULL,
+  `InsuranceStreetNo` VARCHAR(10) NULL DEFAULT NULL,
+  `InsuranceStreetName` VARCHAR(50) NULL DEFAULT NULL,
+  `InsuranceCity` VARCHAR(50) NULL DEFAULT NULL,
+  `InsuranceState` VARCHAR(2) NULL DEFAULT NULL,
+  `InsuranceZip` VARCHAR(5) NULL DEFAULT NULL,
+  `InsurancePhone` VARCHAR(10) NULL DEFAULT NULL,
+  PRIMARY KEY (`InsuranceCompID`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `hospital`.`DoctorFacility`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`DoctorFacility` (
+  `docfacid` INT NOT NULL,
+  `facid` INT NOT NULL,
+  PRIMARY KEY (`docfacid`, `facid`)
+  )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `hospital`.`PatientFacility`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`PatientFacility` (
+  `patfacid` INT NOT NULL,
+  `facid` INT NOT NULL,
+  PRIMARY KEY (`patfacid`, `facid`)
+  )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+-- -----------------------------------------------------
+-- Table `hospital`.`Insurance`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`Insurance` (
+  `InsurancePolicyID` INT NOT NULL AUTO_INCREMENT,
+  `InsurancePolicyName` VARCHAR(50) NULL DEFAULT NULL,
+  `InsuranceCoPay` DECIMAL(5,2) NULL DEFAULT NULL,
+  `InsurancePolicyDesc` VARCHAR(100) NULL DEFAULT NULL,
+  `PatientID` INT NULL,
+  `InsCompanyID` INT NULL,
+  PRIMARY KEY (`InsurancePolicyID`)
+  )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+-- -----------------------------------------------------
+-- Table `hospital`.`DoctorTreatment`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`DoctorTreatment` (
+  `doctreatid` INT NOT NULL,
+  `dttreatid` INT NOT NULL,
+  PRIMARY KEY (`doctreatid`, `dttreatid`)
+  )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+-- -----------------------------------------------------
+-- Table `hospital`.`PatientTreatment`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`PatientTreatment` (
+  `pattreatid` INT NOT NULL,
+  `pttreatid` INT NOT NULL,
+  PRIMARY KEY (`pattreatid`, `pttreatid`)
+  )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+-- -----------------------------------------------------
+-- Table `hospital`.`Prescription`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`Prescription` (
+  `PrescriptionID` INT NOT NULL AUTO_INCREMENT,
+  `PrescriptionDesc` VARCHAR(100) NULL DEFAULT NULL,
+  `PrescriptionExpireDate` DATE NULL DEFAULT NULL,
+  `PrescriptionName` VARCHAR(50) NULL DEFAULT NULL,
+  `PrescriptionRefillNum` INT NULL DEFAULT NULL,
+  `PrescriptionWarningLabel` VARCHAR(50) NULL DEFAULT NULL,
+  `pharmid` INT NOT NULL,
+  PRIMARY KEY (`PrescriptionID`)
+  )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+-- -----------------------------------------------------
+-- Table `hospital`.`DoctorPrescription`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`DoctorPrescription` (
+  `docpresid` INT NOT NULL,
+  `prescriptid` INT NOT NULL,
+  PRIMARY KEY (`docpresid`, `prescriptid`)
+  )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+-- -----------------------------------------------------
+-- Table `hospital`.`PatientPrescription`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`PatientPrescription` (
+  `patpresid` INT NOT NULL,
+  `prescriptid` INT NOT NULL,
+  PRIMARY KEY (`patpresid`, `prescriptid`)
+  )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `hospital`.`Drug`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`Drug` (
+  `DrugID` INT NOT NULL AUTO_INCREMENT,
+  `DrugExpDate` DATE NULL DEFAULT NULL,
+  `DrugName` VARCHAR(50) NULL DEFAULT NULL,
+  `NDCCode` VARCHAR(10) NULL DEFAULT NULL,
+  `WarningLabel` VARCHAR(50) NULL DEFAULT NULL,
+  `Description` VARCHAR(100) NULL DEFAULT NULL,
+  PRIMARY KEY (`DrugID`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `hospital`.`PrescriptionDrug`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`PrescriptionDrug` (
+  `prescriptdrugid` INT NOT NULL,
+  `pdrugid` INT NOT NULL,
+  `Number_of_Refills` INT NULL,
+  `Amount_Prescribed` VARCHAR(45) NULL,
+  PRIMARY KEY (`prescriptdrugid`, `pdrugid`)
+)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `hospital`.`Appointment_has_Facility`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`Appointment_has_Facility` (
+  `Appointment_AppointmentID` INT NOT NULL,
+  `Facility_FacilityID` INT NOT NULL,
+  PRIMARY KEY (`Appointment_AppointmentID`, `Facility_FacilityID`)
+  )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `hospital`.`Patient_has_Symptom`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `hospital`.`Patient_has_Symptom` (
+  `Patient_PatientID` INT NOT NULL,
+  `Symptom_SymptomID` INT NOT NULL,
+  PRIMARY KEY (`Patient_PatientID`, `Symptom_SymptomID`)
+  )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+CREATE TABLE IF NOT EXISTS `hospital`.`Symptom_has_MedicalAssistant` (
+  `Symptom_SymptomID` INT NOT NULL,
+  `MedicalAssistant_MedicalAssistantID` INT NOT NULL,
+  PRIMARY KEY (`Symptom_SymptomID`, `MedicalAssistant_MedicalAssistantID`)
+)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+INSERT INTO `Doctor`
+(`DoctorID`,`DoctorFname`,`DoctorLname`,`DoctorStreetNo`,`DoctorStreetName`,`DoctorCity`,`DoctorState`,`DoctorZip`,`DoctorHomePhone`,`DoctorCellPhone`,`DoctorEmailAddress`,`DoctorSpeciality`,`DoctorSalary`)
+VALUES (1,'Harry','Wright','49','Aviation
+Wy','Dallas','TX','75248','4102081981','2149065469','hkwright@jourappide.com','Psychology',50000.00);
+INSERT INTO `Doctor`
+(`DoctorID`,`DoctorFname`,`DoctorLname`,`DoctorStreetNo`,`DoctorStreetName`,`DoctorCity`,`DoctorState`,`DoctorZip`,`DoctorHomePhone`,`DoctorCellPhone`,`DoctorEmailAddress`,`DoctorSpeciality`,`DoctorSalary`)
+VALUES (2,'Ronnie','Oliver','3448','Colins
+Street','Claysburg','PA','16625','4103459866','8142397015','ronjoliver@yahoo.com','Oncology',80000.00);
+INSERT INTO `Doctor`
+(`DoctorID`,`DoctorFname`,`DoctorLname`,`DoctorStreetNo`,`DoctorStreetName`,`DoctorCity`,`DoctorState`,`DoctorZip`,`DoctorHomePhone`,`DoctorCellPhone`,`DoctorEmailAddress`,`DoctorSpeciality`,`DoctorSalary`)
+VALUES (3,'John','Young','1287','Meadowbrook Mall Road','Mira
+Loma','CA','91752','4436849325','3108773327','john.young@gmail.com','Internal
+Medicine',65000.00);
+
+INSERT INTO `User`
+(`uid`,`LastName`,`FirstName`,`Email`,`Password`)
+VALUES ('fu','Fuerst','Andreas','afeurst@metrogeneral.cityinthe.cloud','6e58f76f5be5ef06a56d4eeb2c4dc58be3dbe8c7');
+INSERT INTO `User`
+(`uid`,`LastName`,`FirstName`,`Email`,`Password`)
+('db','Basin','David','dbasin@metrogeneral.cityinthe.cloud','8d0547d4b27b689c3a3299635d859f7d50a2b805');
+INSERT INTO `User`
+(`uid`,`LastName`,`FirstName`,`Email`,`Password`)
+('ms','Schlaepfer','Michael','mschlaepfer@metrogeneral.cityinthe.cloud','4d7de8512bd584c3137bb80f453e61306b148875');
+INSERT INTO `User`
+(`uid`,`LastName`,`FirstName`,`Email`,`Password`)
+('1337','Hacker','Happy','cyph3r@hacknet.cityinthe.cloud','6b97f534c330b5cc78d4cc23e01e48be3377105b');
+
+INSERT INTO `Patient`
+(`PatientID`,`PatientSSN`,`PatientFname`,`PatientLname`,`PatientGender`,`PatientBirthDate`,`PatientStreetNo`,`PatientStreetName`,`PatientAptNo`,`PatientCity`,`PatientState`,`PatientZip`,`PatientHomePhone`,`PatientCellPhone`,`PatientEmailAddress`,`InsurancePolicyNumber`,`InsuranceCompID`,`Patientcol`)
+VALUES (1,'560974928','Patricia','Ernheardt','F','1960-02-02','1547','Lowndes
+Hill
+Rd',1,'Frederick','MD','93301','6625146582','333553212','pat.earnhardt@reps.com','8319850',11,NULL);
+INSERT INTO `Patient`
+(`PatientID`,`PatientSSN`,`PatientFname`,`PatientLname`,`PatientGender`,`PatientBirthDate`,`PatientStreetNo`,`PatientStreetName`,`PatientAptNo`,`PatientCity`,`PatientState`,`PatientZip`,`PatientHomePhone`,`PatientCellPhone`,`PatientEmailAddress`,`InsurancePolicyNumber`,`InsuranceCompID`,`Patientcol`)
+VALUES (2,'480028291','James','Munoz','M','1944-10-13','3508','Park
+Boulevard','00','Laurel','IA','50141','6414769608',NULL,'Jamesmunoz@hotmail.com','391012',12,NULL);
+INSERT INTO `Patient`
+(`PatientID`,`PatientSSN`,`PatientFname`,`PatientLname`,`PatientGender`,`PatientBirthDate`,`PatientStreetNo`,`PatientStreetName`,`PatientAptNo`,`PatientCity`,`PatientState`,`PatientZip`,`PatientHomePhone`,`PatientCellPhone`,`PatientEmailAddress`,`InsurancePolicyNumber`,`InsuranceCompID`,`Patientcol`)
+VALUES (3,'621104827','David ','Shipley','M','1961-06-25','4470','Sundown
+Lane',2,'Austin','TX','78753','5127308173','8280214713','david.shipley@armyspy.com','271084',13,NULL);
+INSERT INTO `Patient`
+(`PatientID`,`PatientSSN`,`PatientFname`,`PatientLname`,`PatientGender`,`PatientBirthDate`,`PatientStreetNo`,`PatientStreetName`,`PatientAptNo`,`PatientCity`,`PatientState`,`PatientZip`,`PatientHomePhone`,`PatientCellPhone`,`PatientEmailAddress`,`InsurancePolicyNumber`,`InsuranceCompID`,`Patientcol`)
+VALUES (4,'644927163','Matilda','Lee','F','1954-01-08','4500','Mulberry
+St',3,'Houston','Tx','77705','9351308612','8271239812','mlee@erols.com','381930',11,NULL);
+
+INSERT INTO `MedicalAssistant` (`MedicalAssistantID`,`MedicalAssistantName`)
+VALUES (1,'Margret Lindquist');
+INSERT INTO `MedicalAssistant` (`MedicalAssistantID`,`MedicalAssistantName`)
+VALUES (2,'Amanda Richardson');
+INSERT INTO `MedicalAssistant` (`MedicalAssistantID`,`MedicalAssistantName`)
+VALUES (3,'Nina Ball');
+INSERT INTO `MedicalAssistant` (`MedicalAssistantID`,`MedicalAssistantName`)
+VALUES (4,'Siobhan Reed');
+
+INSERT INTO `FrontDesk` (`FrontDeskID`,`FrontDeskFName`,`FrontDeskLName`)
+VALUES (1,'Emily','Potts');
+INSERT INTO `FrontDesk` (`FrontDeskID`,`FrontDeskFName`,`FrontDeskLName`)
+VALUES (2,'Jennifer','Holmes');
+INSERT INTO `FrontDesk` (`FrontDeskID`,`FrontDeskFName`,`FrontDeskLName`)
+VALUES (3,'Clarke','Douglas');
+
+INSERT INTO `Facility`
+(`FacilityID`,`FacilityType`,`FacilityAvail`,`FacilityHrOperation`,`FacilityName`,`FacilityStreetNo`,`FacilityStreetName`,`FacilityCity`,`FacilityState`,`FacilityZip`,`FacilityPhone`)
+VALUES (1,'Inpatient Procedures',1,NULL,'Medcare Health','1931','Charles
+Street','Baltimore','MD','20752','4107529911');
+INSERT INTO `Facility`
+(`FacilityID`,`FacilityType`,`FacilityAvail`,`FacilityHrOperation`,`FacilityName`,`FacilityStreetNo`,`FacilityStreetName`,`FacilityCity`,`FacilityState`,`FacilityZip`,`FacilityPhone`)
+VALUES
+(2,'Psychology',1,'2010-01-01','St.Jimmy\'s','612','Riverside','Potomac','MD','21412','4104590345');
+
+INSERT INTO `Prescription`
+(`PrescriptionID`,`PrescriptionDesc`,`PrescriptionExpireDate`,`PrescriptionName`,`PrescriptionRefillNum`,`PrescriptionWarningLabel`,`pharmid`)
+VALUES (1,'35 tablets of xanex','2016-03-22','Xanax',1,'Do not take with
+alochol',1);
+INSERT INTO `Prescription`
+(`PrescriptionID`,`PrescriptionDesc`,`PrescriptionExpireDate`,`PrescriptionName`,`PrescriptionRefillNum`,`PrescriptionWarningLabel`,`pharmid`)
+VALUES (2,'50 tablets of Claratin','2015-08-11','Claratin','4','Take with a
+meal',1);
+INSERT INTO `Prescription`
+(`PrescriptionID`,`PrescriptionDesc`,`PrescriptionExpireDate`,`PrescriptionName`,`PrescriptionRefillNum`,`PrescriptionWarningLabel`,`pharmid`)
+VALUES (3,'5 tablets fo Vicodin','2015-09-30','Vicodin','0','Take only as
+needed',2);
+
+INSERT INTO `Drug`
+(`DrugID`,`DrugExpDate`,`DrugName`,`NDCCode`,`WarningLabel`,`Description`)
+VALUES (1,'2016-12-03','Xanax',NULL,'Do not take with alcohol','used to reduce
+anxiety');
+INSERT INTO `Drug`
+(`DrugID`,`DrugExpDate`,`DrugName`,`NDCCode`,`WarningLabel`,`Description`)
+VALUES (2,'2015-08-12','Vicoden',NULL,'Take only as directed','For pain
+relief');
+INSERT INTO `Drug`
+(`DrugID`,`DrugExpDate`,`DrugName`,`NDCCode`,`WarningLabel`,`Description`)
+VALUES (3,'2017-04-14','Claratin',NULL,'Causes dry mouth','For the treatment
+of allergies');
+
+INSERT INTO `InsuranceCompany`
+(`InsuranceCompID`,`InsuranceCompName`,`InsuranceStreetNo`,`InsuranceStreetName`,`InsuranceCity`,`InsuranceState`,`InsuranceZip`,`InsurancePhone`)
+VALUES (1,'Blue Cross Blue
+Shield','4924','Leighton','Plainsville','DE','31235','5139034802');
+INSERT INTO `InsuranceCompany`
+(`InsuranceCompID`,`InsuranceCompName`,`InsuranceStreetNo`,`InsuranceStreetName`,`InsuranceCity`,`InsuranceState`,`InsuranceZip`,`InsurancePhone`)
+VALUES (2,'Cigna','853','Neighorst','Norton','AZ','75023','8521907135');
+INSERT INTO `InsuranceCompany`
+(`InsuranceCompID`,`InsuranceCompName`,`InsuranceStreetNo`,`InsuranceStreetName`,`InsuranceCity`,`InsuranceState`,`InsuranceZip`,`InsurancePhone`)
+VALUES (3,'Northwestern
+Mutual','880','Jameson','Scottsdale','AZ','84910','4139814702');
+
+INSERT INTO `Insurance`
+(`InsurancePolicyID`,`InsurancePolicyName`,`InsuranceCoPay`,`InsurancePolicyDesc`,`PatientID`,`InsCompanyID`)
+VALUES (1,'Blue Cross Blue Shield',20.00,'Full',1,1);
+INSERT INTO `Insurance`
+(`InsurancePolicyID`,`InsurancePolicyName`,`InsuranceCoPay`,`InsurancePolicyDesc`,`PatientID`,`InsCompanyID`)
+VALUES (2,'Cigna',50.00,NULL,3,2);
+INSERT INTO `Insurance`
+(`InsurancePolicyID`,`InsurancePolicyName`,`InsuranceCoPay`,`InsurancePolicyDesc`,`PatientID`,`InsCompanyID`)
+VALUES (3,'Northwestern Mutual',40.00,NULL,4,3);
+-- INSERT INTO `Insurance`
+(`InsurancePolicyID`,`InsurancePolicyName`,`InsuranceCoPay`,`InsurancePolicyDesc`,`PatientID`,`InsCompanyID`)
+VALUES (4,'Blue Cross Blue Shield',25.00,NULL,2,4);
+
+INSERT INTO `PrescriptionDrug`
+(`prescriptdrugid`,`pdrugid`,`Number_of_Refills`,`Amount_Prescribed`) VALUES
+(1,1,1,'35');
+INSERT INTO `PrescriptionDrug`
+(`prescriptdrugid`,`pdrugid`,`Number_of_Refills`,`Amount_Prescribed`) VALUES
+(2,3,4,'50');
+INSERT INTO `PrescriptionDrug`
+(`prescriptdrugid`,`pdrugid`,`Number_of_Refills`,`Amount_Prescribed`) VALUES
+(3,2,1,'5');
+
+INSERT INTO `Symptom` (`SymptomID`,`SymptomName`,`SymptomCode`,`SymptomDesc`)
+VALUES (1,'localized pain','pain','Pain in certain area');
+INSERT INTO `Symptom` (`SymptomID`,`SymptomName`,`SymptomCode`,`SymptomDesc`)
+VALUES (2,'mood swings','mania','sudden changes in mood');
+INSERT INTO `Symptom` (`SymptomID`,`SymptomName`,`SymptomCode`,`SymptomDesc`)
+VALUES (3,'fatigue','fatigue','excess tired feelilng');
+
+INSERT INTO `Symptom_has_MedicalAssistant`
+(`Symptom_SymptomID`,`MedicalAssistant_MedicalAssistantID`) VALUES (1,4);
+INSERT INTO `Symptom_has_MedicalAssistant`
+(`Symptom_SymptomID`,`MedicalAssistant_MedicalAssistantID`) VALUES (2,2);
+INSERT INTO `Symptom_has_MedicalAssistant`
+(`Symptom_SymptomID`,`MedicalAssistant_MedicalAssistantID`) VALUES (3,1);
+
+INSERT INTO `Treatment`
+(`TreatmentID`,`TreatmentName`,`TreatmentType`,`TreatmentDate`,`TreatmentCode`,`TreatmentDesc`)
+VALUES (1,'Set bone',NULL,NULL,NULL,NULL);
+INSERT INTO `Treatment`
+(`TreatmentID`,`TreatmentName`,`TreatmentType`,`TreatmentDate`,`TreatmentCode`,`TreatmentDesc`)
+VALUES (2,'Chemotherapy',NULL,NULL,NULL,NULL);
+INSERT INTO `Treatment`
+(`TreatmentID`,`TreatmentName`,`TreatmentType`,`TreatmentDate`,`TreatmentCode`,`TreatmentDesc`)
+VALUES (3,'therapy',NULL,NULL,NULL,NULL);
+
+INSERT INTO `Appointment`
+(`AppointmentID`,`AppointmentDate`,`AppointmentDesc`,`FrontDesk_FrontDeskID`,
+`AppointmentDocID`) VALUES (1,'2015-05-28','Physical',1,1);
+INSERT INTO `Appointment`
+(`AppointmentID`,`AppointmentDate`,`AppointmentDesc`,`FrontDesk_FrontDeskID`,
+`AppointmentDocID`)
+VALUES (2,'2015-06-02','Oncology consultation',1, 1);
+INSERT INTO `Appointment`
+(`AppointmentID`,`AppointmentDate`,`AppointmentDesc`,`FrontDesk_FrontDeskID`,
+`AppointmentDocID`)
+VALUES (3,'2015-06-07','X-ray',2, 1);
+INSERT INTO `Appointment`
+(`AppointmentID`,`AppointmentDate`,`AppointmentDesc`,`FrontDesk_FrontDeskID`,
+`AppointmentDocID`)
+VALUES (4,'2015-07-01','Psychology consultation',3, 1);
+
+INSERT INTO `Appointment_has_Facility`
+(`Appointment_AppointmentID`,`Facility_FacilityID`) VALUES (1,1);
+INSERT INTO `Appointment_has_Facility`
+(`Appointment_AppointmentID`,`Facility_FacilityID`) VALUES (2,1);
+INSERT INTO `Appointment_has_Facility`
+(`Appointment_AppointmentID`,`Facility_FacilityID`) VALUES (3,1);
+INSERT INTO `Appointment_has_Facility`
+(`Appointment_AppointmentID`,`Facility_FacilityID`) VALUES (4,2);
+
+INSERT INTO `DoctorFacility` (`docfacid`,`facid`) VALUES (1,2);
+INSERT INTO `DoctorFacility` (`docfacid`,`facid`) VALUES (2,1);
+INSERT INTO `DoctorFacility` (`docfacid`,`facid`) VALUES (3,1);
+
+INSERT INTO `DoctorMA` (`docmaid`,`maid`) VALUES (1,2);
+INSERT INTO `DoctorMA` (`docmaid`,`maid`) VALUES (2,1);
+INSERT INTO `DoctorMA` (`docmaid`,`maid`) VALUES (3,4);
+
+INSERT INTO `DoctorPrescription` (`docpresid`,`prescriptid`) VALUES (2,1);
+INSERT INTO `DoctorPrescription` (`docpresid`,`prescriptid`) VALUES (3,2);
+INSERT INTO `DoctorPrescription` (`docpresid`,`prescriptid`) VALUES (3,3);
+
+INSERT INTO `DoctorTreatment` (`doctreatid`,`dttreatid`) VALUES (1,3);
+INSERT INTO `DoctorTreatment` (`doctreatid`,`dttreatid`) VALUES (2,2);
+INSERT INTO `DoctorTreatment` (`doctreatid`,`dttreatid`) VALUES (3,1);
+
+INSERT INTO `Patient_has_Symptom` (`Patient_PatientID`,`Symptom_SymptomID`)
+VALUES (1,1);
+INSERT INTO `Patient_has_Symptom` (`Patient_PatientID`,`Symptom_SymptomID`)
+VALUES (2,3);
+INSERT INTO `Patient_has_Symptom` (`Patient_PatientID`,`Symptom_SymptomID`)
+VALUES (3,1);
+INSERT INTO `Patient_has_Symptom` (`Patient_PatientID`,`Symptom_SymptomID`)
+VALUES (4,2);
+
+INSERT INTO `PatientAppointment` (`patappid`,`apptid`) VALUES (1,3);
+INSERT INTO `PatientAppointment` (`patappid`,`apptid`) VALUES (2,2);
+INSERT INTO `PatientAppointment` (`patappid`,`apptid`) VALUES (3,1);
+INSERT INTO `PatientAppointment` (`patappid`,`apptid`) VALUES (4,4);
+
+INSERT INTO `PatientFacility` (`patfacid`,`facid`) VALUES (1,1);
+INSERT INTO `PatientFacility` (`patfacid`,`facid`) VALUES (2,1);
+INSERT INTO `PatientFacility` (`patfacid`,`facid`) VALUES (3,1);
+INSERT INTO `PatientFacility` (`patfacid`,`facid`) VALUES (4,2);
+
+INSERT INTO `PatientPrescription` (`patpresid`,`prescriptid`) VALUES (1,3);
+INSERT INTO `PatientPrescription` (`patpresid`,`prescriptid`) VALUES (3,2);
+INSERT INTO `PatientPrescription` (`patpresid`,`prescriptid`) VALUES (4,1);
+
+INSERT INTO `PatientTreatment` (`pattreatid`,`pttreatid`) VALUES (1,1);
+INSERT INTO `PatientTreatment` (`pattreatid`,`pttreatid`) VALUES (2,2);
+INSERT INTO `PatientTreatment` (`pattreatid`,`pttreatid`) VALUES (3,1);
+INSERT INTO `PatientTreatment` (`pattreatid`,`pttreatid`) VALUES (4,3);
+
+ALTER TABLE Appointment ADD FOREIGN KEY (AppointmentDocID) REFERENCES
+Doctor(DoctorID);
+ALTER TABLE Appointment ADD FOREIGN KEY (FrontDesk_FrontDeskID) REFERENCES
+FrontDesk(FrontDeskID);
+ALTER TABLE DoctorMA ADD FOREIGN KEY (docmaid) REFERENCES Doctor(DoctorID);
+ALTER TABLE DoctorMA ADD FOREIGN KEY (maid) REFERENCES
+MedicalAssistant(MedicalAssistantID);
+ALTER TABLE PatientAppointment ADD FOREIGN KEY (patappid) REFERENCES
+Patient(PatientID);
+ALTER TABLE PatientAppointment ADD FOREIGN KEY (apptid) REFERENCES
+Appointment(AppointmentID);
+ALTER TABLE DoctorFacility ADD FOREIGN KEY (docfacid) REFERENCES
+Doctor(DoctorID);
+ALTER TABLE DoctorFacility ADD  FOREIGN KEY (facid) REFERENCES
+Facility(FacilityID);
+ALTER TABLE PatientFacility ADD FOREIGN KEY (patfacid) REFERENCES
+Patient(PatientID);
+ALTER TABLE PatientFacility ADD FOREIGN KEY (facid) REFERENCES
+Facility(FacilityID);
+ALTER TABLE Insurance ADD FOREIGN KEY (PatientID) REFERENCES
+Patient(PatientID);
+ALTER TABLE Insurance ADD FOREIGN KEY (InsCompanyID) REFERENCES
+InsuranceCompany(InsuranceCompID);
+ALTER TABLE DoctorTreatment ADD FOREIGN KEY (doctreatid) REFERENCES
+Doctor(DoctorID);
+ALTER TABLE DoctorTreatment ADD FOREIGN KEY (dttreatid) REFERENCES
+Treatment(TreatmentID);
+ALTER TABLE PatientTreatment ADD FOREIGN KEY (pattreatid) REFERENCES
+Patient(PatientID);
+ALTER TABLE PatientTreatment ADD FOREIGN KEY (pttreatid) REFERENCES
+Treatment(TreatmentID);
+ALTER TABLE DoctorPrescription ADD FOREIGN KEY (docpresid) REFERENCES
+Doctor(DoctorID);
+ALTER TABLE DoctorPrescription ADD FOREIGN KEY (prescriptid) REFERENCES
+Prescription(PrescriptionID);
+ALTER TABLE PatientPrescription ADD FOREIGN KEY (patpresid) REFERENCES
+Patient(PatientID);
+ALTER TABLE PatientPrescription ADD FOREIGN KEY (prescriptid) REFERENCES
+Prescription(PrescriptionID);
+ALTER TABLE PrescriptionDrug ADD FOREIGN KEY (prescriptdrugid) REFERENCES
+Prescription(PrescriptionID);
+ALTER TABLE PrescriptionDrug ADD FOREIGN KEY (pdrugid) REFERENCES
+Drug(DrugID);
+ALTER TABLE Appointment_has_Facility ADD FOREIGN KEY
+(Appointment_AppointmentID) REFERENCES Appointment(AppointmentID);
+ALTER TABLE Appointment_has_Facility ADD FOREIGN KEY (Facility_FacilityID)
+REFERENCES Facility(FacilityID);
+ALTER TABLE Patient_has_Symptom ADD FOREIGN KEY (Patient_PatientID) REFERENCES
+Patient(PatientID);
+ALTER TABLE Patient_has_Symptom ADD FOREIGN KEY (Symptom_SymptomID) REFERENCES
+Symptom(SymptomID);
+ALTER TABLE Symptom_has_MedicalAssistant ADD FOREIGN KEY (Symptom_SymptomID)
+REFERENCES Symptom(SymptomID);
+ALTER TABLE Symptom_has_MedicalAssistant ADD FOREIGN KEY
+(MedicalAssistant_MedicalAssistantID) REFERENCES
+MedicalAssistant(MedicalAssistantID);
+
+-- Dump completed on 2015-10-28 16:53:06

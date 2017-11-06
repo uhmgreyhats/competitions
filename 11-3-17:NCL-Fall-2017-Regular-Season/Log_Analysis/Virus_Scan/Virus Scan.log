@@ -1,0 +1,268 @@
+Scan result of Farbar Recovery Scan Tool Version: 19-08-2012
+Ran by SYSTEM at 26-08-2012 00:50:09
+Running from G:\
+Windows 7 Home Premium   (X64) OS Language: English(US) 
+The current controlset is ControlSet002
+
+========================== Registry (Whitelisted) =============
+
+HKLM\...\Run: [Apoint] C:\Program Files\DellTPad\Apoint.exe [384296 2010-04-05] (Alps Electric Co., Ltd.)
+HKLM\...\Run: [SysTrayApp] C:\Program Files\IDT\WDM\sttray64.exe [444416 2009-06-28] (IDT, Inc.)
+HKLM\...\Run: [IgfxTray] C:\Windows\system32\igfxtray.exe [165912 2009-06-30] (Intel Corporation)
+HKLM\...\Run: [HotKeysCmds] C:\Windows\system32\hkcmd.exe [385560 2009-06-30] (Intel Corporation)
+HKLM\...\Run: [Persistence] C:\Windows\system32\igfxpers.exe [365080 2009-06-30] (Intel Corporation)
+HKLM\...\Run: [Broadcom Wireless Manager UI] C:\Program Files\Dell\Dell Wireless WLAN Card\WLTRAY.exe [4968960 2009-07-16] (Dell Inc.)
+HKLM\...\Run: [QuickSet] C:\Program Files\Dell\QuickSet\QuickSet.exe [3180624 2009-07-02] (Dell Inc.)
+HKLM\...\Run: [IAAnotif] C:\Program Files (x86)\Intel\Intel Matrix Storage Manager\iaanotif.exe [186904 2009-06-04] (Intel Corporation)
+HKLM-x32\...\Run: [SunJavaUpdateSched] "C:\Program Files (x86)\Common Files\Java\Java Update\jusched.exe" [248040 2010-02-18] (Sun Microsystems, Inc.)
+HKLM-x32\...\Run: [PDVDDXSrv] "C:\Program Files (x86)\CyberLink\PowerDVD DX\PDVDDXSrv.exe" [140520 2009-06-24] (CyberLink Corp.)
+HKLM-x32\...\Run: [Dell Webcam Central] "C:\Program Files (x86)\Dell Webcam\Dell Webcam Central\WebcamDell2.exe" /mode2 [409744 2009-06-24] (Creative Technology Ltd)
+HKLM-x32\...\Run: [Desktop Disc Tool] "C:\Program Files (x86)\Roxio\Roxio Burn\RoxioBurnLauncher.exe" [494064 2009-06-18] ()
+HKLM-x32\...\Run: [DellSupportCenter] "C:\Program Files (x86)\Dell Support Center\bin\sprtcmd.exe" /P DellSupportCenter [x]
+HKLM-x32\...\Run: [GrooveMonitor] "C:\Program Files (x86)\Microsoft Office\Office12\GrooveMonitor.exe" [30040 2009-02-26] (Microsoft Corporation)
+HKLM-x32\...\Run: [Adobe Reader Speed Launcher] "C:\Program Files (x86)\Adobe\Reader 9.0\Reader\Reader_sl.exe" [37296 2011-09-07] (Adobe Systems Incorporated)
+HKLM-x32\...\Run: [Adobe ARM] "C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARM.exe" [937920 2011-03-29] (Adobe Systems Incorporated)
+HKLM-x32\...\Run: [APSDaemon] "C:\Program Files (x86)\Common Files\Apple\Apple Application Support\APSDaemon.exe" [59240 2012-02-20] (Apple Inc.)
+HKLM-x32\...\Run: [QuickTime Task] "C:\Program Files (x86)\QuickTime\QTTask.exe" -atboottime [421888 2011-10-24] (Apple Inc.)
+HKLM-x32\...\Run: [iTunesHelper] "C:\Program Files (x86)\iTunes\iTunesHelper.exe" [421736 2012-03-27] (Apple Inc.)
+HKU\Clint\...\Run: [msnmsgr] "C:\Program Files (x86)\Windows Live\Messenger\msnmsgr.exe" /background [4240760 2010-09-23] (Microsoft Corporation)
+HKU\Clint\...\Run: [Messenger (Yahoo!)] "C:\PROGRA~2\Yahoo!\Messenger\YahooMessenger.exe" -quiet [5252408 2010-06-01] (Yahoo! Inc.)
+HKU\Clint\...\RunOnce: [FlashPlayerUpdate] C:\Windows\SysWOW64\Macromed\Flash\FlashUtil11e_ActiveX.exe -update activex [1475584 2010-11-20] (Microsoft Corporation)
+HKU\Default\...\RunOnce: [mctadmin] C:\Windows\System32\mctadmin.exe [1475584 2010-11-20] (Microsoft Corporation)
+HKU\Default User\...\RunOnce: [mctadmin] C:\Windows\System32\mctadmin.exe [1475584 2010-11-20] (Microsoft Corporation)
+HKU\Rosey\...\Run: [swg] "C:\Program Files (x86)\Google\GoogleToolbarNotifier\GoogleToolbarNotifier.exe" [39408 2010-01-24] (Google Inc.)
+HKLM\...\RunOnce: [DSUpdateLauncher] "c:\Program Files (x86)\Dell DataSafe Local Backup\Components\DSUpdate\hstart.exe" /NOCONSOLE /D="c:\Program Files (x86)\Dell DataSafe Local Backup\Components\DSUpdate" /RUNAS "c:\Program Files (x86)\Dell DataSafe Local Backup\Components\DSUpdate\DSUpd.exe" [161008 2009-09-17] ()
+HKLM-x32\...\RunOnce: [Launcher] C:\Program Files (x86)\Dell DataSafe Local Backup\Components\scheduler\Launcher.exe [165104 2009-10-02] (Softthinks)
+Winlogon\Notify\GoToAssist: C:\Program Files (x86)\Citrix\GoToAssist\514\G2AWinLogon_x64.dll [X]
+Winlogon\Notify\igfxcui: igfxdev.dll (Intel Corporation)
+Tcpip\Parameters: [DhcpNameServer] 75.75.76.76 75.75.75.75
+Startup: C:\Users\Clint\Start Menu\Programs\Startup\Dell Dock.lnk
+ShortcutTarget: Dell Dock.lnk -> C:\Program Files\Dell\DellDock\DellDock.exe (Stardock Corporation)
+Startup: C:\Users\Clint\Start Menu\Programs\Startup\OneNote 2007 Screen Clipper and Launcher.lnk
+ShortcutTarget: OneNote 2007 Screen Clipper and Launcher.lnk -> C:\Program Files (x86)\Microsoft Office\Office12\ONENOTEM.EXE (Microsoft Corporation)
+Startup: C:\Users\Default\Start Menu\Programs\Startup\Dell Dock First Run.lnk
+ShortcutTarget: Dell Dock First Run.lnk -> C:\Program Files\Dell\DellDock\DellDock.exe (Stardock Corporation)
+Startup: C:\Users\Default User\Start Menu\Programs\Startup\Dell Dock First Run.lnk
+ShortcutTarget: Dell Dock First Run.lnk -> C:\Program Files\Dell\DellDock\DellDock.exe (Stardock Corporation)
+Startup: C:\Users\Rosey\Start Menu\Programs\Startup\Dell Dock.lnk
+ShortcutTarget: Dell Dock.lnk -> C:\Program Files\Dell\DellDock\DellDock.exe (Stardock Corporation)
+
+==================== Services (Whitelisted) ======
+
+2 Lavasoft Ad-Aware Service; "C:\Program Files (x86)\Lavasoft\Ad-Aware\AAWService.exe" [2152152 2011-10-27] (Lavasoft Limited)
+2 N360; "C:\Program Files (x86)\Norton 360\Engine\6.2.1.5\ccSvcHst.exe" /s "N360" /m "C:\Program Files (x86)\Norton 360\Engine\6.2.1.5\diMaster.dll" /prefetch:1 [309688 2012-04-12] (Symantec Corporation)
+2 STacSV; C:\Windows\System32\DriverStore\FileRepository\stwrt64.inf_amd64_neutral_afc3018f8cfedd20\STacSV64.exe [240128 2009-06-28] (IDT, Inc.)
+
+========================== Drivers (Whitelisted) =============
+
+1 ccSet_N360; C:\Windows\system32\drivers\N360x64\0602010.005\ccSetx64.sys [167048 2011-11-29] (Symantec Corporation)
+1 eeCtrl; \??\C:\Program Files (x86)\Common Files\Symantec Shared\EENGINE\eeCtrl64.sys [484512 2012-06-01] (Symantec Corporation)
+3 EraserUtilRebootDrv; \??\C:\Program Files (x86)\Common Files\Symantec Shared\EENGINE\EraserUtilRebootDrv.sys [138912 2012-06-06] (Symantec Corporation)
+1 IDSVia64; \??\C:\ProgramData\Norton\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\N360_6.2.0.9\Definitions\IPSDefs\20120606.001\IDSvia64.sys [488568 2012-05-18] (Symantec Corporation)
+3 Lavasoft Kernexplorer; \??\C:\Program Files (x86)\Lavasoft\Ad-Aware\KernExplorer64.sys [17152 2011-09-05] ()
+0 Lbd; C:\Windows\System32\Drivers\Lbd.sys [69376 2011-08-18] (Lavasoft AB)
+3 SRTSP; C:\Windows\System32\Drivers\N360x64\0602010.005\SRTSP64.SYS [737912 2012-03-29] (Symantec Corporation)
+1 SRTSPX; C:\Windows\system32\drivers\N360x64\0602010.005\SRTSPX64.SYS [37496 2012-03-29] (Symantec Corporation)
+0 SymDS; C:\Windows\System32\drivers\N360x64\0602010.005\SYMDS64.SYS [451192 2012-03-29] (Symantec Corporation)
+0 SymEFA; C:\Windows\System32\drivers\N360x64\0602010.005\SYMEFA64.SYS [1092728 2012-03-29] (Symantec Corporation)
+3 SymEvent; \??\C:\Windows\system32\Drivers\SYMEVENT64x86.SYS [175736 2012-05-01] (Symantec Corporation)
+1 SymIRON; C:\Windows\system32\drivers\N360x64\0602010.005\Ironx64.SYS [190072 2012-03-29] (Symantec Corporation)
+1 SymNetS; C:\Windows\System32\Drivers\N360x64\0602010.005\SYMNETS.SYS [405624 2012-03-29] (Symantec Corporation)
+3 yukonw7; C:\Windows\System32\DRIVERS\yk62x64.sys [395264 2009-09-28] ()
+1 BHDrvx64; \??\C:\ProgramData\Norton\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\N360_6.2.0.9\Definitions\BASHDefs\20120531.001\BHDrvx64.sys [x]
+3 NAVENG; \??\C:\ProgramData\Norton\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\N360_6.2.0.9\Definitions\VirusDefs\20120606.020\ENG64.SYS [x]
+3 NAVEX15; \??\C:\ProgramData\Norton\{0C55C096-0F1D-4F28-AAA2-85EF591126E7}\N360_6.2.0.9\Definitions\VirusDefs\20120606.020\EX64.SYS [x]
+
+========================== NetSvcs (Whitelisted) ===========
+
+
+============ One Month Created Files and Folders ==============
+
+2012-08-23 10:50 - 2012-06-02 17:19 - 02428952 ____A (Microsoft Corporation) C:\Windows\System32\wuaueng.dll
+2012-08-23 10:50 - 2012-06-02 17:19 - 00701976 ____A (Microsoft Corporation) C:\Windows\System32\wuapi.dll
+2012-08-23 10:50 - 2012-06-02 17:19 - 00057880 ____A (Microsoft Corporation) C:\Windows\System32\wuauclt.exe
+2012-08-23 10:50 - 2012-06-02 17:19 - 00044056 ____A (Microsoft Corporation) C:\Windows\System32\wups2.dll
+2012-08-23 10:50 - 2012-06-02 17:19 - 00038424 ____A (Microsoft Corporation) C:\Windows\System32\wups.dll
+2012-08-23 10:50 - 2012-06-02 17:15 - 02622464 ____A (Microsoft Corporation) C:\Windows\System32\wucltux.dll
+2012-08-23 10:50 - 2012-06-02 17:15 - 00099840 ____A (Microsoft Corporation) C:\Windows\System32\wudriver.dll
+2012-08-23 10:50 - 2012-06-02 15:19 - 00186752 ____A (Microsoft Corporation) C:\Windows\System32\wuwebv.dll
+2012-08-23 10:50 - 2012-06-02 15:15 - 00036864 ____A (Microsoft Corporation) C:\Windows\System32\wuapp.exe
+2012-08-21 21:41 - 2009-07-13 20:14 - 00020480 ____A (Microsoft Corporation) C:\Windows\svchost.exe
+2012-08-21 18:51 - 2012-08-21 18:51 - 00000000 ____D C:\FRST
+2012-08-21 18:50 - 2012-08-21 18:50 - 00000000 ____D C:\Emergency
+2012-08-20 19:35 - 2012-08-23 10:39 - 00000000 ____D C:\Windows\pss
+2012-08-09 05:08 - 2012-08-09 05:08 - 00000000 ____D C:\Users\Clint\Local Settings\Application Data\{D0A01E86-87F6-424C-932B-24F65B61C6FF}
+2012-08-09 05:08 - 2012-08-09 05:08 - 00000000 ____D C:\Users\Clint\Local Settings\{D0A01E86-87F6-424C-932B-24F65B61C6FF}
+2012-08-09 05:08 - 2012-08-09 05:08 - 00000000 ____D C:\Users\Clint\AppData\Local\{D0A01E86-87F6-424C-932B-24F65B61C6FF}
+2012-08-08 20:10 - 2012-08-08 20:10 - 00000000 ____D C:\Users\Clint\Local Settings\Application Data\{133EFF72-7EB2-4BDE-AFA9-3AA9D510BBD4}
+2012-08-08 20:10 - 2012-08-08 20:10 - 00000000 ____D C:\Users\Clint\Local Settings\{133EFF72-7EB2-4BDE-AFA9-3AA9D510BBD4}
+2012-08-08 20:10 - 2012-08-08 20:10 - 00000000 ____D C:\Users\Clint\AppData\Local\{133EFF72-7EB2-4BDE-AFA9-3AA9D510BBD4}
+2012-08-07 04:44 - 2012-08-07 04:44 - 00000000 ____D C:\Users\Clint\Local Settings\Application Data\{2340EE39-BD37-41A2-95C1-FA4214E9E748}
+2012-08-07 04:44 - 2012-08-07 04:44 - 00000000 ____D C:\Users\Clint\Local Settings\{2340EE39-BD37-41A2-95C1-FA4214E9E748}
+2012-08-07 04:44 - 2012-08-07 04:44 - 00000000 ____D C:\Users\Clint\AppData\Local\{2340EE39-BD37-41A2-95C1-FA4214E9E748}
+2012-08-06 20:54 - 2012-08-06 20:54 - 00000000 ____D C:\Users\Clint\Local Settings\Application Data\{F2DA5D48-7484-4EB4-B7F8-888BFCA66472}
+2012-08-06 20:54 - 2012-08-06 20:54 - 00000000 ____D C:\Users\Clint\Local Settings\{F2DA5D48-7484-4EB4-B7F8-888BFCA66472}
+2012-08-06 20:54 - 2012-08-06 20:54 - 00000000 ____D C:\Users\Clint\AppData\Local\{F2DA5D48-7484-4EB4-B7F8-888BFCA66472}
+2012-08-06 17:18 - 2012-08-06 17:18 - 00000000 ____D C:\Users\Clint\Application Data\Ad-Aware Antivirus
+2012-08-06 17:18 - 2012-08-06 17:18 - 00000000 ____D C:\Users\Clint\AppData\Roaming\Ad-Aware Antivirus
+2012-08-03 19:07 - 2012-08-03 19:07 - 00000000 ____D C:\Users\Clint\Local Settings\Application Data\{8647D269-09D2-4FBC-B4E1-EBDEC2E331B3}
+2012-08-03 19:07 - 2012-08-03 19:07 - 00000000 ____D C:\Users\Clint\Local Settings\{8647D269-09D2-4FBC-B4E1-EBDEC2E331B3}
+2012-08-03 19:07 - 2012-08-03 19:07 - 00000000 ____D C:\Users\Clint\AppData\Local\{8647D269-09D2-4FBC-B4E1-EBDEC2E331B3}
+2012-08-03 18:52 - 2012-08-03 18:52 - 00000000 ____D C:\Users\Clint\Local Settings\Application Data\{7D4506E3-8904-4EF9-8493-5B52184B07B8}
+2012-08-03 18:52 - 2012-08-03 18:52 - 00000000 ____D C:\Users\Clint\Local Settings\{7D4506E3-8904-4EF9-8493-5B52184B07B8}
+2012-08-03 18:52 - 2012-08-03 18:52 - 00000000 ____D C:\Users\Clint\AppData\Local\{7D4506E3-8904-4EF9-8493-5B52184B07B8}
+
+============ 3 Months Modified Files ========================
+
+2012-08-23 11:18 - 2009-07-14 00:10 - 01143218 ___AH C:\Windows\WindowsUpdate.log
+2012-08-23 11:09 - 2009-07-13 23:45 - 00014240 ___AH C:\Windows\System32\7B296FB0-376B-497e-B012-9C450E1B7327-5P-1.C7483456-A289-439d-8115-601632D005A0
+2012-08-23 11:09 - 2009-07-13 23:45 - 00014240 ___AH C:\Windows\System32\7B296FB0-376B-497e-B012-9C450E1B7327-5P-0.C7483456-A289-439d-8115-601632D005A0
+2012-08-23 11:06 - 2012-03-04 17:51 - 00743352 ____A C:\Windows\System32\PerfStringBackup.TMP
+2012-08-23 11:00 - 2010-12-29 15:26 - 00016276 ____A C:\aaw7boot.log
+2012-08-23 11:00 - 2009-07-14 00:08 - 00000006 ___AH C:\Windows\Tasks\SA.DAT
+2012-08-23 11:00 - 2009-07-13 23:51 - 00055673 ___AH C:\Windows\setupact.log
+2012-08-05 18:31 - 2012-03-24 13:43 - 00010105 ____A C:\Users\Clint\My Documents\Tyler income etc.xlsx
+2012-08-05 18:31 - 2012-03-24 13:43 - 00010105 ____A C:\Users\Clint\Documents\Tyler income etc.xlsx
+2012-08-05 07:21 - 2010-01-04 21:21 - 00000958 ____A C:\Users\Clint\Application Data\wklnhst.dat
+2012-08-05 07:21 - 2010-01-04 21:21 - 00000958 ____A C:\Users\Clint\AppData\Roaming\wklnhst.dat
+2012-07-16 11:14 - 2010-11-23 15:09 - 00110352 ____A C:\Users\Rosey\Local Settings\GDIPFONTCACHEV1.DAT
+2012-07-16 11:14 - 2010-11-23 15:09 - 00110352 ____A C:\Users\Rosey\Local Settings\Application Data\GDIPFONTCACHEV1.DAT
+2012-07-16 11:14 - 2010-11-23 15:09 - 00110352 ____A C:\Users\Rosey\AppData\Local\GDIPFONTCACHEV1.DAT
+2012-06-24 08:40 - 2010-09-01 20:22 - 00000896 ___AH C:\Windows\Tasks\GoogleUpdateTaskMachineUA.job
+2012-06-23 16:11 - 2010-09-01 20:22 - 00000892 ___AH C:\Windows\Tasks\GoogleUpdateTaskMachineCore.job
+2012-06-18 13:42 - 2012-06-18 13:42 - 00000000 ___AH C:\Windows\System32\Drivers\Msft_User_WpdMtpDr_01_09_00.Wdf
+2012-06-11 20:10 - 2010-09-01 20:24 - 00002346 ____A C:\Users\Public\Desktop\Google Chrome.lnk
+2012-06-11 20:10 - 2010-09-01 20:24 - 00002346 ____A C:\Users\All Users\Desktop\Google Chrome.lnk
+2012-06-07 17:29 - 2009-11-10 13:35 - 00784168 ___AH C:\Windows\PFRO.log
+2012-06-02 17:19 - 2012-08-23 10:50 - 02428952 ____A (Microsoft Corporation) C:\Windows\System32\wuaueng.dll
+2012-06-02 17:19 - 2012-08-23 10:50 - 00701976 ____A (Microsoft Corporation) C:\Windows\System32\wuapi.dll
+2012-06-02 17:19 - 2012-08-23 10:50 - 00057880 ____A (Microsoft Corporation) C:\Windows\System32\wuauclt.exe
+2012-06-02 17:19 - 2012-08-23 10:50 - 00044056 ____A (Microsoft Corporation) C:\Windows\System32\wups2.dll
+2012-06-02 17:19 - 2012-08-23 10:50 - 00038424 ____A (Microsoft Corporation) C:\Windows\System32\wups.dll
+2012-06-02 17:15 - 2012-08-23 10:50 - 02622464 ____A (Microsoft Corporation) C:\Windows\System32\wucltux.dll
+2012-06-02 17:15 - 2012-08-23 10:50 - 00099840 ____A (Microsoft Corporation) C:\Windows\System32\wudriver.dll
+2012-06-02 15:19 - 2012-08-23 10:50 - 00186752 ____A (Microsoft Corporation) C:\Windows\System32\wuwebv.dll
+2012-06-02 15:15 - 2012-08-23 10:50 - 00036864 ____A (Microsoft Corporation) C:\Windows\System32\wuapp.exe
+
+Type 00 partition infection:
+C:\Windows\svchost.exe
+
+========================= Known DLLs (Whitelisted) ============
+
+
+========================= Bamital & volsnap Check ============
+
+C:\Windows\System32\winlogon.exe => MD5 is legit
+C:\Windows\System32\wininit.exe => MD5 is legit
+C:\Windows\SysWOW64\wininit.exe => MD5 is legit
+C:\Windows\explorer.exe => MD5 is legit
+C:\Windows\SysWOW64\explorer.exe => MD5 is legit
+C:\Windows\System32\svchost.exe => MD5 is legit
+C:\Windows\SysWOW64\svchost.exe => MD5 is legit
+C:\Windows\System32\services.exe => MD5 is legit
+C:\Windows\System32\User32.dll => MD5 is legit
+C:\Windows\SysWOW64\User32.dll => MD5 is legit
+C:\Windows\System32\userinit.exe => MD5 is legit
+C:\Windows\SysWOW64\userinit.exe => MD5 is legit
+C:\Windows\System32\Drivers\volsnap.sys => MD5 is legit
+
+==================== EXE ASSOCIATION =====================
+
+HKLM\...\.exe: exefile => OK
+HKLM\...\exefile\DefaultIcon: %1 => OK
+HKLM\...\exefile\open\command: "%1" %* => OK
+
+========================= Memory info ====================== 
+
+Percentage of memory in use: 15%
+Total physical RAM: 4056.36 MB
+Available physical RAM: 3437.18 MB
+Total Pagefile: 4054.51 MB
+Available Pagefile: 3437.22 MB
+Total Virtual: 8192 MB
+Available Virtual: 8191.91 MB
+
+======================= Partitions =========================
+
+1 Drive c: (OS) (Fixed) (Total:283.4 GB) (Free:188.67 GB) NTFS
+2 Drive d: (RECOVERY) (Fixed) (Total:14.65 GB) (Free:10.25 GB) NTFS ==>[System with boot components (obtained from reading drive)]
+5 Drive g: () (Removable) (Total:3.73 GB) (Free:3.72 GB) FAT32
+6 Drive x: (Boot) (Fixed) (Total:0.03 GB) (Free:0.03 GB) NTFS
+
+  Disk ###  Status         Size     Free     Dyn  Gpt
+  --------  -------------  -------  -------  ---  ---
+  Disk 0    Online          298 GB      0 B         
+  Disk 1    No Media           0 B      0 B         
+  Disk 2    Online         3824 MB      0 B         
+
+Partitions of Disk 0:
+===============
+
+  Partition ###  Type              Size     Offset
+  -------------  ----------------  -------  -------
+  Partition 1    OEM                 39 MB    31 KB
+  Partition 2    Primary             14 GB    40 MB
+  Partition 3    Primary            283 GB    14 GB
+
+==================================================================================
+
+Disk: 0
+Partition 1
+Type  : DE
+Hidden: Yes
+Active: No
+
+  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+* Volume 5                      FAT    Partition     39 MB  Healthy    Hidden  
+
+==================================================================================
+
+Disk: 0
+Partition 2
+Type  : 07
+Hidden: No
+Active: Yes
+
+  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+* Volume 1     D   RECOVERY     NTFS   Partition     14 GB  Healthy            
+
+==================================================================================
+
+Disk: 0
+Partition 3
+Type  : 07
+Hidden: No
+Active: No
+
+  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+* Volume 2     C   OS           NTFS   Partition    283 GB  Healthy            
+
+==================================================================================
+
+Partitions of Disk 2:
+===============
+
+  Partition ###  Type              Size     Offset
+  -------------  ----------------  -------  -------
+  Partition 1    Primary           3823 MB   536 KB
+
+==================================================================================
+
+Disk: 2
+Partition 1
+Type  : 0B
+Hidden: No
+Active: No
+
+  Volume ###  Ltr  Label        Fs     Type        Size     Status     Info
+  ----------  ---  -----------  -----  ----------  -------  ---------  --------
+* Volume 4     G                FAT32  Removable   3823 MB  Healthy            
+
+==================================================================================
+
+Last Boot: 2011-05-25 03:30
+
+======================= End Of Log ==========================
