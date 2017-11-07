@@ -12,6 +12,7 @@ We think that a hacker was able to modify some of our DNS records. Analyze a pac
 8. What organization operates the IP adddress that was queried for reverse lookup?
 9. Which FQDN is responsible for the majority of TCP SIP traffic to cityinthe.cloud?
 10. Which FQDN is the backup for TCP SIP traffic if all other servers are not available for cityinthe.cloud?
+
 ## Answers
 1. 209.244.0.3
 2. level3

@@ -20,3 +20,20 @@ Some of our new recruits are starting to learn about analyzing packet captures. 
 6. 91.189.88.40
 7. mozilla@example.com
 8. 4
+
+## Walkthroughs
+
+We can guess that the IP `10.0.0.132` is pinging other devices due to the sheer amount of times this IP appears in the source column.
+
+We can get this ip `209.85.225.104` by viewing the ICMP protocol traffic and seeing that this host does not respond to the probes.
+
+Using `ip.src == 10.0.0.132 && http.request` as the filter and viewing the first packet, we can see that this ip sent a get request to `www.offensive-security.com`.
+
+We can view the amount of bytes of the .ico file by using `File --> Export Objects --> HTTP`.
+
+We can find the FTP server `91.189.88.40` by using the filter `ip.src == 10.0.0.132`, and searching for FTP data.
+
+Right click a FTP packet, Follow --> TCP stream and view the password.
+
+We can view the response of the `LIST` command in `tcp.stream eq 30`.
+Just follow the FTP TCP stream, and increment the frame until you find the response packet.

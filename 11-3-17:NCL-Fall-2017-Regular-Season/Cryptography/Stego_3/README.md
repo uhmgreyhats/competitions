@@ -6,3 +6,7 @@ Hackers have been trying to prevent us from viewing their images by converting t
 
 ## Answers
 1. SKY-TELI-0397
+
+## Walkthroughs
+
+Create a script that reads line by line, taking in the color of each line and creating an image from all of the colors.

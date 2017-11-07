@@ -8,3 +8,8 @@ We have come across this image which we think may contain a flag. Try to make so
 ## Answers
 1. BattleSteg
 2. SKY-QLPO-4833
+
+## Walkthroughs
+Using [Digital Ink Toolkit](http://diit.sourceforge.net/), you can solve this challenge quite easily.
+
+Just choose your image, algorithm, and get the flag!
