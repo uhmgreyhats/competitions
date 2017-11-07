@@ -14,3 +14,12 @@ Our officers have obtained password dumps storing hacker passwords. Try your han
 3. xitezonoca1261
 4. mint412ruth999
 5. NewsListen6
+
+## Walkthroughs
+These are NTLM hashes, so we need to crack them a bit differently.
+
+We can download [ophcrack](http://ophcrack.sourceforge.net/), then run the following command.
+
+`ophcrack -g -t . -f hashfile`.
+
+This cracks all the passwords.

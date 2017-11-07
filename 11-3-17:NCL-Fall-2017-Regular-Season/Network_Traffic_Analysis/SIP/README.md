@@ -26,3 +26,21 @@ We have been using SIP and VoIP for telecommunication within the organization. R
 9. Apple
 10. 27
 11. 63
+
+## Walkthroughs
+We can get the IP address of the SIP proxy by looking for which IP is getting REGISTER requests.
+
+We can get the sotware running by viewing any response packet.
+Session Initiation Protocol --> Message Header --> WWW-Authenticate --> Realm. Or by viewing the User-Agent of some responses.
+
+We can get the amount of voicemails by using the filter `ip.src == 10.21.128.1`, looking for the NOTIFY packet to `542@10.21.2.75`, and viewing the message body. This happens in packet 311. Packet --> Session Initiation Protocol --> Message Body --> Voice-Message.
+
+We can get the SIP address of the caller and recipient of the call by using Wireshark's Telephony section --> VoIP calls.
+
+We can get their IP addresses by searching for packets with those specific SIP addresses, and viewing where the SIP proxy is sending those packets.
+
+We can see who hangs up the call in packet 1351. Session Initiation Protocol --> Message Header and viewing the To and From fields.
+
+We can view the brand of phone by using the filter `ip.src == 10.21.1.132` and viewing the Ethernet II header of the packet, revealing an Apple phone.
+
+We can see how many seconds the first word was said by using Wireshark's Telephony section --> SIP flows, selecting all the packets, and hitting Play Streams. Hitting the play button here reveals the first word was said 27 seconds in.

@@ -15,6 +15,9 @@ Test your understanding of port scanning by scanning scanme.cityinthe.cloud and 
 2. 23
 3. 111
 4. 2049
-5. nginx
-6. ubuntu
-7. 2547
+5. 2547
+6. nginx
+7. ubuntu
+
+## Walkthroughs
+nmap `scanme.cityinthe.cloud`, answer the questions.

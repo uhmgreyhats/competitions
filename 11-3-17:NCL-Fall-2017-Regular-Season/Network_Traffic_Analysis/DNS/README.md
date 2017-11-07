@@ -24,3 +24,22 @@ We think that a hacker was able to modify some of our DNS records. Analyze a pac
 8. linkedin
 9. sip2.cityinthe.cloud
 10. sip3.cityinthe.cloud
+
+## Walkthroughs
+
+We can view the IP address of the DNS resolver by seeing which IP is responding to the queries.
+
+We can find out which organization operates this DNS through a simple dig query `dig -x 209.244.0.3`.
+
+We can view the IPv4 address in packet number 2, DNS --> Answers --> www.cityinthe.cloud
+
+We can view the IPv6 address in packet number 4, DNS --> Answers --> www.cityinthe.cloud
+
+We can view the mail provider in packet number 12, DNS --> Answers --> cityinthe.cloud and seeing answers of type MX (Mail eXchange).
+
+We can view the hacker's handle in packet number 16, DNS --> Answers --> tagged.cityinthe.cloud --> TXT `zer0dark0 was here`.
+
+We can view the ip address responsible for DNS reverse lookup and organization responsible for handling it in packet number 22. DNS --> Answers --> 10.10.174.108.in-addr.arpa --> Domain Name.
+Reverse the IP to be in the correct format.
+
+We can FQDNs responsible for handling TCP SIP traffic in packet number 20. DNS --> Answers --> _sip._tcp.cityinthe.cloud --> Target, and comparing their prorities/weights.

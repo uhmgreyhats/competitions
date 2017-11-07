@@ -14,3 +14,8 @@ Help new recruits understand how Nmap works. Specify your answers in the format 
 3. -6
 4. -sU
 5. -e eth1
+
+## Walkthroughs
+`man nmap | grep -i 'whatever'`.
+
+[nmap cheatsheet](https://hackertarget.com/nmap-cheatsheet-a-quick-reference-guide/)

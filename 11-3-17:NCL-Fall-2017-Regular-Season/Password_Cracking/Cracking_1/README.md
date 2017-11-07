@@ -14,3 +14,8 @@ Our officers have obtained password dumps storing hacker passwords. After obtain
 3. brat47
 4. rl2909
 5. Quantegy01
+
+## Walkthroughs
+Loop through `rockyou.txt`, generate the md5 hash for each word, and compare to the hashes above.
+
+Solution in `cracking1.py`.

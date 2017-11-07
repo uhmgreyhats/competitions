@@ -14,3 +14,8 @@ Our officers have obtained password dumps storing hacker passwords. It appears t
 3. SKY-PWDS-6406
 4. SKY-PWDS-1568
 5. SKY-PWDS-1929
+
+## Walkthroughs
+First, we generate all permutations of 4 digit numbers from 0000 to 9999. Generate hashes based off our new string, and compare them to what is in our list.
+
+Solution is in `cracking3.py`.

@@ -18,3 +18,26 @@ We have been using RADIUS to authenticate users on our network. Review a packet 
 5. 22
 6. 30:07:4D:53:77:F5
 7. 43
+
+## Walkthroughs
+
+We can get the IP address of the NAS by seeing the destination of the Access-Challenge packets.
+
+Since we only have two ips, we know the other one must be the RADIUS server.
+
+To get the amount of requests accepted, I used this tshark command.
+`tshark -r Radius.pcap | grep 'Access-Accept' | wc -l`, which lists all the packets and searches for 'Access-Accept' and prints out how many were found.
+
+We can see all the authentication methods for RADIUS [here](https://sites.google.com/site/sireeshajakku/networking/radius/radius-authentication-schemes).
+Seeing how alot of the packets have EAP in them, we can guess the method is EAP-TLS.
+
+I got the amount of access requests made by hana.harb with this command.
+`tshark -nVr Radius.pcap | grep -C 8 'Access-Request' | grep 'AVP:' | grep "User-Name" | grep "hana.harb" | wc -l`
+
+I got sally.berro's MAC address using this command.
+`tshark -nVr Radius.pcap| grep -C 50 'sally.berro' | grep 'Acct-Session-Id'`
+
+I got the amount of different access points in a similar fashion.
+`tshark -nVr Radius.pcap| grep -A 21 'Access-Request' | grep 'Called-Station-Id' | sort | uniq -c | wc -l`
+
+Keep in mind, these commands were formulated based on the needs of this challenge, and probably cannot be used for any other one.

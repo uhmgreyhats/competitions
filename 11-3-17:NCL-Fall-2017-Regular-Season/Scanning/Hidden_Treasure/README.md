@@ -15,6 +15,8 @@ Test your scanning abilities. Find the hidden treasure on this HTTP website. The
 4. SKY-SAOL-7738
 5. SKY-PWLI-3141
 
+## Walkthroughs
+I used [disearch](https://github.com/maurosoria/dirsearch) in combination with `rockyou.txt` and `dirbuster`'s wordlist.
 
 ## After
-http://treasure.cityinthe.cloud/desktop10/flag3.txt was the route for flag3.
+http://treasure.cityinthe.cloud/desktop10d/flag3.txt was the route for flag3.
