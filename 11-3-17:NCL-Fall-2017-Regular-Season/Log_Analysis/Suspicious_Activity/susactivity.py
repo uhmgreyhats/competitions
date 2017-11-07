@@ -1,3 +1,26 @@
+# How many total employees are there?
+arr = []
+with open("access.log") as f:
+    content = f.readlines()
+content = [x.strip() for x in content]
+
+for line in content:
+    person = line[line.find("[")+1:line.find("]")]
+    if person not in arr:
+        arr.append(person)
+
+with open("badge.log") as f:
+    content = f.readlines()
+content = [x.strip() for x in content]
+
+for line in content:
+    person = line[line.find("[")+1:line.find("]")]
+    if person not in arr:
+        arr.append(person)
+print 'How many total employees are there?'
+print len(arr)
+
+
 # How many total kilobytes were transfered by the employees?
 
 import re

@@ -2,6 +2,14 @@ with open("Breach Prevention.log") as f:
     content = f.readlines()
 content = [x.strip() for x in content]
 
+# How many total attacks were blocked by the breach prevention software?
+i = 0
+for line in content:
+    if ('Blocking reason:' in line):
+        i += 1
+print 'How many total attacks were blocked by the breach prevention software?'
+print i
+
 # How many different types of attacks are listed in this log?
 obj = {}
 for line in content:
@@ -12,20 +20,32 @@ for line in content:
         else:
             obj[string] = 0
 print 'How many different types of attacks are listed in this log?'
-print obj
+print len(obj)
 
+# How many remote file inclusion attacks were prevented?
+i = 0
+for line in content:
+    if ('Blocking reason: rfishield' == line):
+        i += 1
+print 'How many remote file inclusion attacks were prevented?'
+print i
 
+# What IP address attempted the most attacks?
 # How many different IP addresses attempted an attack on this server?
 obj = {}
 for line in content:
     if ('IP' in line):
-        string = line.replace('IP        :', '')
+        string = line.replace('IP        : ', '')
         if string in obj:
             obj[string] += 1
         else:
             obj[string] = 0
+print 'What IP address attempted the most attacks?'
+for key in obj:
+    if (obj[key] == max(obj[key] for key in obj)):
+        print key
 print 'How many different IP addresses attempted an attack on this server?'
-print obj
+print len(obj)
 
 # What URL was blocked the most often by the direct file inclusion defense?
 urls = {}

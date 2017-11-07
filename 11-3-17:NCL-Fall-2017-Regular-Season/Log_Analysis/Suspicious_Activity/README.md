@@ -10,3 +10,13 @@ The Department of Cyber Crime has strict access requirements, anyone entering or
 1. 300
 2. 65179621
 3. 2017/01/05 10:09
+
+## Walkthroughs
+
+Attached as a script `susactivity.py` is the solutions to these questions.
+
+For question 1, just loop over both files and push unique names into an array and print the length.
+
+For question 2, loop over `access.log` and get all the numbers before KB and add them all up at the end.
+
+For question 3, loop over both files and check for access when not swiped in.

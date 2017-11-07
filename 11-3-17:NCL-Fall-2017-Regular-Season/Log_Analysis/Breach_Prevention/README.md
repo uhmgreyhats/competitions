@@ -18,3 +18,11 @@ Analyze a log file from breach prevention software running on one of our servers
 5. OpenVAS
 6. 5
 7. https://www.dc4-web-portal.cityinthe.cloud/uploadify/uploadify.php?folder=/
+
+## Walkthroughs
+
+I attached a script for questions 1, 2, 3, 4, 6, and 7.
+
+It's pretty self explanatory, just looping through the lines of the file looking for certain things/keeping track of how often they appeared.
+
+Question 5 is solved by looking at the User-Agent of each attack, and researching OpenVAS.

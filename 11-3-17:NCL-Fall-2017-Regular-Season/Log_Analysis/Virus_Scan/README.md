@@ -16,3 +16,17 @@ A hacker has accidentally leaked a log file from a virus scan that they ran. Ana
 4. Dell
 5. 2
 6. NTFS
+
+## Walkthroughs
+
+We can see the OS by looking at line 4 of the file.
+
+We can see the amount of physical drives by viewing lines 187-190 and seeing the accessible drives.
+
+We can see the total virtual RAM in line 182.
+
+We can guess that this is a Dell computer due to Dell drivers being used in lines 7-48.
+
+We can guess the amount of Users by searching for all unique \\Users\\ and counting them up.
+
+We know that this is using NTFS due to line 241.
