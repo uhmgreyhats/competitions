@@ -2,6 +2,7 @@
 Competition write-ups and resources
 
 ## Competitions
+- 11-3-17 [NCL Fall 2017 Regular-Season](/11-3-17:NCL-Fall-2017-Regular-Season)
 - 10-20-17 [NCL Fall 2017 Preseason](/10-20-17:NCL-Fall-2017-Preseason)
 - 10-14-17 [Booz Allen's CyberSim CTF](/10-14-17:CyberSim-CTF)
 - 10-13-17 [Booz Allen's PyNight](/10-13-17:PyNight)
