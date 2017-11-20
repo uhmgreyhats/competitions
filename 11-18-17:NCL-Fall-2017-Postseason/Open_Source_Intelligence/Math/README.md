@@ -9,3 +9,8 @@ Help double check the work of some new recruits by doing some binary math. Provi
 5. 0x40  <<  2
 
 ## Answers
+1. 62
+2. 0
+3. 94
+4. 126
+5. 256

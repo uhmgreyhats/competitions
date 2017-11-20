@@ -7,3 +7,6 @@ Various organizations are responsible for managing the allocation of Internet nu
 3. Which RIR is responsible for South Africa?
 
 ## Answers
+1. ARIN
+2. APNIC
+3. AFRINIC

@@ -7,3 +7,6 @@ Our officers have obtained password dumps storing hacker passwords. It appears t
 3. c68690a53319fc7c11afe2ff01422702
 
 ## Answers
+1. SKY-LXCU-6884
+2. SKY-LXCU-0824
+3. SKY-LXCU-4398

@@ -7,3 +7,6 @@ Try generating partial hash collisions.
 3. Enter input where the Whirlpool hash starts with "09F"
 
 ## Answers
+1. asdfltD
+2. asdfjOU
+3. asdfgAM

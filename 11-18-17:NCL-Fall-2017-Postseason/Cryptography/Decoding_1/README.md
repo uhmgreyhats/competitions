@@ -7,3 +7,6 @@ Our officers have obtained some encrypted codes. See if you can decode them. We 
 3. ZRF-YWKP-0250
 
 ## Answers
+1. SKY-KJJH-5862
+2. SKY-BGNA-5180
+3. SKY-RPDI-0250

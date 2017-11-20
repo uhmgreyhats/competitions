@@ -10,3 +10,9 @@ Our officers have obtained password dumps storing hacker passwords. Can you crac
 6. 4937d8c198d88ba7ceaf45521ab6227d
 
 ## Answers
+1. dumbo
+2. cinderella009
+3. t0yst0ry
+4. S3cr3t@r1at
+5.
+6. 

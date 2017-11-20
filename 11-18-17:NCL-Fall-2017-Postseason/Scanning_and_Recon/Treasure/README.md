@@ -11,3 +11,8 @@ Note: You are allowed to run automated tools on this target.
 5. What is the value of flag 5?
 
 ## Answers
+1. SKY-TCKU-3135
+2. SKY-TCKU-2847
+3. SKY-TCKU-5710
+4. SKY-TCKU-9567
+5. SKY-TCKU-3193

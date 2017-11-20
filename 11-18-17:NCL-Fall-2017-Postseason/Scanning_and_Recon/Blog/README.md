@@ -14,3 +14,9 @@ Note: You are allowed to run automated tools on this target.
 8. What plugin does not reveal a version number?
 
 ## Answers
+1. WordPress
+2. 4.9
+3. Apache
+4. 1.0.9
+5. jennifer johnson
+6. techwriter

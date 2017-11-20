@@ -12,3 +12,11 @@ A NASA server made its logs public, analyze it to see if any anomalies exist.
 8. How many total bytes were sent to 163.206.137.21?
 
 ## Answers
+1. 100000
+2. 605
+3. 90071123
+4. 2013615881
+5. piweba3y.prodigy.com
+6. /images/NASA-logosmall.gif
+7. 1995/07/13
+8. 11568196

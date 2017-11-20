@@ -9,3 +9,8 @@ There's been numerous attempts to attack the server, find the following statisti
 5. What was the third most attempted username?
 
 ## Answers
+1. 4034
+2. 814
+3. 111.9.116.183
+4. 772
+5. oracle

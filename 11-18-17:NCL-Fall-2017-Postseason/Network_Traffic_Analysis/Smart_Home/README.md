@@ -10,3 +10,8 @@ Internet connected smart homes are super convenient, but what kind of traffic ac
 5. There's a device on the network that is waking up other devices, what is the manufacturer of that source device?
 
 ## Answers
+1. 3
+2. 2
+3. 0
+4. Cisco Meraki
+5. Canon Inc

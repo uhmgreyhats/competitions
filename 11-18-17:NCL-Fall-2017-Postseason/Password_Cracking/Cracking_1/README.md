@@ -7,3 +7,6 @@ Our officers have obtained password dumps storing hacker passwords. We need your
 3. f34fa00f74a6cf6cefc0ad7638e34a2b
 
 ## Answers
+1. G1y8hSl616
+2. 4n70n0m45i4
+3. l8xz6by797

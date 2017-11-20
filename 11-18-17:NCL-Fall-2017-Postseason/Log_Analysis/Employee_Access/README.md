@@ -8,3 +8,7 @@ After the recent security concerns at the Department of Cyber Crime, the Directo
 4. At what time did the suspicious activity occur? (Round to nearest minute using format: YYYY/MM/DD hh:mm)
 
 ## Answers
+1. 240
+2. 27515
+3. 1616934435
+4. 2017/02/26 17:34

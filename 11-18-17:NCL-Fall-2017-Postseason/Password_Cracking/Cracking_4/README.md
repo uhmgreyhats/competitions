@@ -9,3 +9,8 @@ Our officers have obtained password dumps storing hacker passwords. You might be
 5. $1$raq$hFL9lWXUbBJ5BYN7QvByu/
 
 ## Answers
+1. hlatblasonir0
+2. ch1012d4n
+3. sphaerotheca
+4. silverfloor50
+5. op][o9i8

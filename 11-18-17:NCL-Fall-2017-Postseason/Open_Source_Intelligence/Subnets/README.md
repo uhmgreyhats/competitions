@@ -10,3 +10,9 @@ Find out information regarding the following subnets.
 6. What is a valid Github IPv4 address?
 
 ## Answers
+1. 65534
+2. 10.100.0.1
+3. 224.0.0.1
+4. 240.0.0.1
+5. 192.0.2.1
+6. 192.30.252.2

@@ -9,3 +9,8 @@ Help identify common UDP ports so that our new recruits can understand what's ru
 5. What port does the Optimized Link State Routing service operate on?
 
 ## Answers
+1. 123
+2. 67
+3. 161
+4. 513
+5. 698

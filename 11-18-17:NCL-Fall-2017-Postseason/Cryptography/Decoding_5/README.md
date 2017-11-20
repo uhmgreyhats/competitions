@@ -7,3 +7,6 @@ We have intercepted encrypted messages between hackers. Decipher them and find o
 3. I lei edbehiulghviadtrbdnas  i
 
 ## Answers
+1. Preparing for credit transfer
+2. Laptop in hand
+3. I have disabled their building

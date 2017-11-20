@@ -7,3 +7,6 @@ Our officers have obtained password dumps storing hacker passwords. Try your han
 3. 7917CEF91B37158A902139606B6D16B5:204428CA673479DE2A5A1E5F1C105957
 
 ## Answers
+1. yxf3tuak
+2. hmft47jp
+3. 628v5hjb

@@ -17,3 +17,16 @@ Tom, an individual known for his absent-mindedness, lost his travel docs again b
 13. What is Tom's frequent flyer account number?
 
 ## Answers
+1. info.com
+2. travel
+3. http://www.travelchannel.com/
+4. iceland
+5. hawaii
+6. Ocean Front Corner King
+7. 2
+8. 2017/12/05
+9. 
+10. UA103
+11. 2017/12/01
+12. Derrick Fedder
+13. CD562649
