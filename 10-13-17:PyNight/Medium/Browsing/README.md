@@ -7,3 +7,6 @@ Examine the packet capture file. The flag is the number of TCP connections multi
 
 Attached Files
 - pictures.pcap
+
+## Answer
+9100
