@@ -7,3 +7,6 @@ This pcap was created on your server at 172.17.0.2. What command was run against
 
 Attached Files
 - capture201708061729.pcap
+
+## Answer
+netcat
