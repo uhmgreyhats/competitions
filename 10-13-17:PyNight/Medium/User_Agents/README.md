@@ -7,3 +7,6 @@ You are checking in on the requests to your web server from within your network.
 
 Attached Files
 - requests.log
+
+## Answer
+31
