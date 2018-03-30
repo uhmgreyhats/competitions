@@ -8,3 +8,11 @@ Answer the following questions about security issues.
 4. What was the original RFC number that described Telnet?	
 5. How large (in bytes) was the SQL Slammer worm?	
 6. Samy is my...	
+
+## Answers
+1. CVE-2014-3566
+2. 2.3.4
+3. 1.0.1g
+4. 15
+5. 376
+6. hero
