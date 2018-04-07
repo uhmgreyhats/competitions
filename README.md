@@ -2,6 +2,8 @@
 Competition resources
 
 ## Resources
+- 3-30-18 [NCL-Spring-2018-Gymnasium](/3-30-18:NCL-Spring-2018-Gymnasium)
+- 3-29-18 [KPMG-Pentesting-Comp	Markdown](/3-29-18:KPMG-Pentesting-Comp)
 - 11-18-17 [NCL Fall 2017 Postseason](/11-18-17:NCL-Fall-2017-Postseason)
 - 11-3-17 [NCL Fall 2017 Regular-Season](/11-3-17:NCL-Fall-2017-Regular-Season)
 - 10-20-17 [NCL Fall 2017 Preseason](/10-20-17:NCL-Fall-2017-Preseason)
